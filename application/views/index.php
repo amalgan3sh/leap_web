@@ -35,7 +35,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- Body -->
 <body>
-
+<?php
+$logo = "assets/images/logo.png";
+?>
 <!-- banner -->
 <div class="main_section_agile" id="home">
 	<div class="container">
@@ -48,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.html"><i>TA</i></a></h1>
+					<a class="navbar-brand" href="#"><img class="logo_main" src="<?php echo $logo; ?>" alt="Logo"></span></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -245,7 +247,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //about -->
 
 <!-- video starts here -->
-<div data-vide-bg="video/Ipad">
+<div data-vide-bg="<?php echo base_url('assets/video/Ipad');?>">
 	<div class="center-container">
 		<div class="video-info">
 		<div class="container">	
@@ -428,7 +430,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li>
 							<div class="w3l-info1">
 								<div class="testimonials-grid-1 img1">
-									<img src="images/c1.jpg" alt="" />
+									<img src="<?php echo base_url('assets/images/c1.jpg');?>" alt="" />
 								</div>
 								<div class="testimonials-grid-2">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -442,7 +444,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li>
 							<div class="w3l-info1">
 								<div class="testimonials-grid-1 img2">
-									<img src="images/c2.jpg" alt="" />
+									<img src="<?php echo base_url('assets/images/c2.jpg');?>" alt="" />
 								</div>
 								<div class="testimonials-grid-2">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -456,7 +458,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li>
 							<div class="w3l-info1">
 								<div class="testimonials-grid-1 img3">
-									<img src="images/c3.jpg" alt=""  />
+									<img src="<?php echo base_url('assets/images/c3.jpg');?>" alt=""  />
 								</div>
 								<div class="testimonials-grid-2">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -642,7 +644,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<section>
 					<div class="modal-body">
 						<h5>Travel Adventure</h5>
-						<img src="images/blog1.jpg" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url('assets/images/blog1.jpg');?>" alt=" " class="img-responsive" />
 						<p>Ut enim ad minima veniam, quis nostrum 
 							exercitationem ullam corporis suscipit laboriosam, 
 							nisi ut aliquid ex ea commodi consequatur? Quis autem 
@@ -695,7 +697,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //ji slider --><!-- //banner js script -->
 			
 <!-- for-Testimonials -->
-	<script defer src="js/jquery.flexslider.js"></script>
+	<script defer src="<?php echo base_url('assets/js/jquery.flexslider.js');?>"></script>
 	<!--Start-slider-script-->
 			<script type="text/javascript">
 			
@@ -711,7 +713,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--End-slider-script-->
 <!-- //for-Testimonials -->
 
-<script type="text/javascript" src="js/numscroller-1.0.js"></script><!-- numscroller js file -->
+<script type="text/javascript" src="<?php echo base_url('assets/js/numscroller-1.0.js');?>"></script><!-- numscroller js file -->
 
 <!-- smooth scrolling -->
 	<script src="<?php echo base_url('/assets/js/SmoothScroll.min.js');?>"></script>
