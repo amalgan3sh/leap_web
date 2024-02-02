@@ -58,7 +58,7 @@ $logo = "assets/images/logo.png";
 						<ul class="nav navbar-nav menu__list">
 							<li class="scroll menu__item"><a href="index.html" class="menu__link">Home</a></li>
 							<li class="scroll menu__item"><a href="#about" class="scroll menu__link">About</a></li>
-							<li class="scroll menu__item"><a href="#team" class="scroll menu__link">Team</a></li>
+							<li class="scroll menu__item"><a href="#team" class="scroll menu__link">Services</a></li>
 							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link">Gallery</a></li>
 							<li class="scroll menu__item"><a href="#testimonials" class="scroll menu__link">Testimonials</a></li>
 							<li class="scroll menu__item"><a href="#contact" class="scroll menu__link">Contact</a></li>
@@ -86,8 +86,6 @@ $logo = "assets/images/logo.png";
 								<div class="agileits-banner-info">
 									<h3>Make Your Dream Live </h3>
 									<h3>Adventures fill your soul</h3>
-									 <p>Travel Adventure</p>
-									
 								</div>	
 					</div>
 					</div>
@@ -98,8 +96,6 @@ $logo = "assets/images/logo.png";
 								<div class="agileits-banner-info">
 									<h3>Adventure awaits for you</h3>
 									<h3>Lets travel to see the world</h3>
-									 <p>Travel Adventure</p>
-									
 								</div>	
 							</div>
 						</div>
@@ -110,13 +106,33 @@ $logo = "assets/images/logo.png";
 								<div class="agileits-banner-info">
 									<h3>One Way To Get Out Of Life</h3>
 									<h3>Lets find some beautiful place</h3>
-									 <p>Travel Adventure</p>
-									
 								</div>	
 								
 							</div>
 						</div>
 					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top3">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h3>One Way To Get Out Of Life</h3>
+									<h3>Lets find some beautiful place</h3>
+								</div>	
+								
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top4">
+							<div class="container">
+								<div class="agileits-banner-info">
+									<h3>Embark on a journey to wellness.</h3>
+								</div>	
+							</div>
+						</div>
+					</li>
+					
 
 			</ul>
 		</div>
@@ -129,19 +145,16 @@ $logo = "assets/images/logo.png";
 		<div class="abouthead">
 			<h5>About us</h5>
 			<h2 class="heading">Who we are</h2>
-			<p>Donec sit amet ex semper odio rhoncus males uada quis ac leo. 
-			Quisque at scelerisque tur.</p>
+			<p>We Leap Visa Travel Agency, where travel dreams become reality. With over 10 years of unparalleled expertise in the travel and visa industry, we have been the guiding compass for countless travelers seeking seamless journeys and unforgettable experiences.</p>
 		</div>
 		<div class="col-md-6 aboutleft">
 			<h4>Our Trip</h4>
-			<h3>Travel Adventure</h3>
-			<p>Morbi at euismod purus, vitae blandit velit. Duis vel lacus elit. 
-			Quisquentase consequat lorem ac condimentum pellentesque. Sed pulvinar sapien
-			velm assa ultrices gravida.condimentum pellentesque. Sed pulvinar sapien
-			velmassa ultrices gravida.onec sit amet ex semper odio rhoncus malesuadaquis ac leo lorem ac condimentum.</p>
-			<p>Morbi at euismod purus, lorem ac condimentum pellentesque. vitae blandit velit. Duis vel lacus elit. 
-			Quisque consequat lorem ac condimentum pellen tesque. Sed pulvinar sapien
-			velmassa ultrices gravida.Sed lectus tellus sodales id elit a, feugiat porttitor nulla.</p>
+			<!-- <h3>Travel Adventure</h3> -->
+			<p>Since 2013, we have been at the forefront of the travel and visa sector, offering a comprehensive range of services tailored to meet the diverse needs of our clients. From leisure travel to business trips, our experienced team is committed to delivering seamless experiences that exceed expectations.
+
+As specialists in visa services, we streamline the often complex process of obtaining visas for travel to more than 13 countries worldwide. With in-depth knowledge of visa requirements and regulations, we guide our clients through every step of the application process, ensuring efficiency and peace of mind.
+
+In addition to our visa services, we also offer a wide array of travel solutions, including personalized trip planning, itinerary customization, and accommodation arrangements. Whether you're embarking on a solo adventure or planning a group excursion, our team is here to turn your travel dreams into reality.<br/>Join us on a journey of discovery and adventure. Experience the world with Leap Visa.</p>
 		</div>
 		<div class="col-md-6 aboutright">
 			<h3>Why Choose Us?</h3>
@@ -206,7 +219,7 @@ $logo = "assets/images/logo.png";
 		</div>
 		<div class="clearfix"></div>
 	<!--count-->
-<div class="count-agileits" id="stats">
+<!-- <div class="count-agileits" id="stats">
 					<div class="count-grids">
 					<div class="count-bgcolor-w3ls">
 						<div class="col-md-3 count-grid">
@@ -240,7 +253,7 @@ $logo = "assets/images/logo.png";
 						<div class="clearfix"></div>
 						</div>
 					</div>
-</div>
+</div> -->
 <!--count-->
 	</div>
 </div>
@@ -251,9 +264,8 @@ $logo = "assets/images/logo.png";
 	<div class="center-container">
 		<div class="video-info">
 		<div class="container">	
-			<h3 class="heading1">Adventurous engage in daring or risky activity.</h3>
-			<h3 class="heading1">Lets Adventure Begins.</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus eget libero finibus facilisis. Phasellus tempus hendrerit sem ut iaculis. Sed sitamet augue sitametmauris gravida interdum. Donec vulputate tempus sem.</p>
+			<h3 class="heading1">Your Gateway to Seamless Adventures Worldwide! Unlocking Borders, Embracing Cultures, and Making Every Destination Yours.</h3>
+			
 		</div>					
 		</div>
 	</div>
@@ -263,45 +275,37 @@ $logo = "assets/images/logo.png";
 <!-- team -->
 	<div id="team" class="team">
 		<div class="container">
-			<h3 class="w3ls-title">Our Team</h3>  
+			<h3 class="w3ls-title">Our Services</h3>  
 			<div class="team-agile-row">
 				<div class="col-md-6 team-grid">
 					<div class="col-md-6 team-grid-right">
-						<img src="<?php echo base_url('/assets/images/team1.jpg'); ?>" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url('/assets/images/visa.jpg'); ?>" alt=" " class="img-responsive" />
 					</div>
 					<div class=" col-md-6 team-grid-left">
-						<h4>Victoria</h4>
-						<h5>Traveller</h5>
-						<p>Adipisci velit, sed quia non numquam eius modi tempora incidunt 
-							ut labore et dolore magnam aliquam quaerat voluptatem</p>
-						<div class="social-wthree-icons bnragile-icons">
+						<h4>Visa Processing</h4>
+						<p>We specialize in simplifying visa processing for travelers to over 15 countries worldwide. 
+							With our expertise and streamlined processes, we ensure a hassle-free journey. 
+							Whether it's for business, vacation, or study, our dedicated team provides efficient and reliable 
+							visa services tailored to your needs.</p>
+						<!-- <div class="social-wthree-icons bnragile-icons">
 							<ul>
 								<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
 								<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li> 
 							</ul>
 							<div class="clearfix"> </div>
-						</div>   
+						</div>    -->
 					</div> 
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-6 team-grid">
 					<div class="col-md-6 team-grid-right agileinfo-welcm-grid">
-						<img src="<?php echo base_url('/assets/images/team2.jpg'); ?>" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url('/assets/images/embassy.png'); ?>" alt=" " class="img-responsive" />
 					</div>
 					<div class="col-md-6 team-grid-left agileinfo-welcm-grid2">
-						<h4>Mark Sophia</h4>
-						<h5>Traveller</h5>
-						<p>Adipisci velit, sed quia non numquam eius modi tempora incidunt 
-							ut labore et dolore magnam aliquam quaerat voluptatem</p>
-						<div class="social-wthree-icons bnragile-icons">
-							<ul>
-								<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
-								<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li> 
-							</ul>
-							<div class="clearfix"> </div>
-						</div> 
+						<h4>Embassy Services</h4>
+						<p>Discover seamless embassy services tailored to your needs with our dedicated assistance. 
+							From visa applications to consular affairs, we streamline the process, ensuring efficiency and accuracy every step of the way.</p>
 					</div> 
 					<div class="clearfix"> </div>
 				</div>
@@ -310,41 +314,24 @@ $logo = "assets/images/logo.png";
 			<div class="team-agile-row2">
 				<div class="col-md-6 team-grid">
 					<div class="col-md-6 team-grid-right">
-						<img src="<?php echo base_url('/assets/images/team3.jpg'); ?>" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url('/assets/images/licence.jpg'); ?>" alt=" " class="img-responsive" />
 					</div>
 					<div class="col-md-6 team-grid-left">
-						<h4>Michael johnny</h4>
-						<h5>Traveller</h5>
-						<p>Adipisci velit, sed quia non numquam eius modi tempora incidunt 
-							ut labore et dolore magnam aliquam quaerat voluptatem</p>
-						<div class="social-wthree-icons bnragile-icons">
-							<ul>
-								<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
-								<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li> 
-							</ul>
-							<div class="clearfix"> </div>
-						</div> 
+						<h4>International Driving License</h4>
+						<p>Embark on your global adventures with ease by obtaining your international driving license with our comprehensive support services. 
+							We guide you through the process, ensuring all necessary paperwork is completed accurately and efficiently.</p>
+						
 					</div> 
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-6 team-grid">
 					<div class="col-md-6 team-grid-right agileinfo-welcm-grid">
-						<img src="<?php echo base_url('/assets/images/team4.jpg'); ?>" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url('/assets/images/health.jpg'); ?>" alt=" " class="img-responsive" />
 					</div>
 					<div class="col-md-6 team-grid-left agileinfo-welcm-grid2">
-						<h4>Steve Bowie</h4>
-						<h5>Traveller</h5>
-						<p>Adipisci velit, sed quia non numquam eius modi tempora incidunt 
-							ut labore et dolore magnam aliquam quaerat voluptatem</p>
-						<div class="social-wthree-icons bnragile-icons">
-							<ul>
-								<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
-								<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li> 
-							</ul>
-							<div class="clearfix"> </div>
-						</div> 
+						<h4>Medical Tourism</h4>
+						<p>Experience seamless medical tourism with our comprehensive support services, powered by our collaboration with Bluedot Medical Assistance 
+							</p>
 					</div> 
 					<div class="clearfix"> </div>
 				</div>
