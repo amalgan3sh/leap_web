@@ -22,4 +22,9 @@ class Onlinecontroller extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
+
+	public function medical()
+	{
+		$this->load->view('medical/medical');
+	}
 }

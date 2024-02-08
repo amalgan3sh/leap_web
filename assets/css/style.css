@@ -922,17 +922,45 @@ h3.w3ls-title {
     bottom: 19%;
 }
 div#testimonials {
-    background: url(../images/testimonial.jpg) no-repeat 0px 0px;
+    
     background-size: cover;
     margin-top: 50px;
-    height: 400px;
+    height: 100%;
     padding: 5em 0;
+	
 }
+
+
 .testimonials h3.w3ls-title {
-    color: #ffffff;
+    color: #242424;
     margin-bottom: 1em;
 }
 /* //testimonials */
+
+/* Medical Tourism*/
+
+.testimonials .container{
+	text-align: center;
+}
+
+.medical-para{
+	
+	color: #3C3633;
+	font-size: large;
+}
+
+.medical_btn{
+	height: 50px;
+	width: 120px;
+	border: none;
+	border-radius: 30px;
+	background-color: #146eb4;
+	color: #fff;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
 
 /*-- gallery --*/
 .gallery {
@@ -1088,11 +1116,11 @@ div#testimonials {
     text-decoration: none;
 }
 .w3-agile-post-img1 a {
-    background: url(../images/blog1.jpg) no-repeat 0px 0px;
+    background: url(../images/medical.png) no-repeat 0px 0px;
     background-size: cover;
 }
 .w3-agile-post-img2 a {
-    background: url(../images/blog2.jpg) no-repeat 0px 0px;
+    background: url(../images/air_ambulance.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 .w3-agile-post-img21 a {
@@ -1270,6 +1298,13 @@ button.btn1:hover i.fa.fa-paper-plane-o{
 .modal-header {
 	    border-bottom: none!important;
 }
+.modal-body ul {
+    color: #383535;
+    text-align: left;
+        padding: 2em 1em 1em;
+    margin: 0 !important;
+    line-height: 2em;
+}
 .modal-body p {
     color: #383535;
     text-align: left;
@@ -1372,7 +1407,7 @@ button.close {
     padding: 10px 15px 10px 0px;
     margin-bottom: 1em;
 }
-.agileinfo-contact-form-grid button.btn1{
+.agileinfo-contact-form-grid .btn1{
     color: #FFFFFF;
     font-size: 1em;
     text-decoration: none;
@@ -1391,7 +1426,7 @@ button.close {
 .contact-form-left {
     padding-right: 10em;
 }
-.agileinfo-contact-form-grid button.btn1:hover {
+.agileinfo-contact-form-grid .btn1:hover {
     background: #232323;
     border: solid 1px #212121;
     color: #fff;
