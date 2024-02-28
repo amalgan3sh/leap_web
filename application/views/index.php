@@ -347,33 +347,68 @@ In addition to our visa services, we also offer a wide array of travel solutions
         <h3 class="w3ls-title">Our Gallery</h3>
         <div class="gallery-agileinfo">
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/g1.jpg');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/aus.jpg');?>" alt="" title="Travel Adventure Image"/> 
+                <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_1.png');?>" alt="" title="Documents required"/> 
                 </a> 
             </div> 
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/g2.jpg');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/uae_flag.jpg');?>" alt="" title="Travel Adventure Image"/> 
+                <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_2.png');?>" alt="" title="Documents required"/> 
                 </a> 
             </div>
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/g3.jpg');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/uk_flag.jpg');?>" alt="" title="Travel Adventure Image"/> 
+                <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_3.png');?>" alt="" title="Documents required"/> 
                 </a> 
             </div>
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/g4.jpg');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/germany_flag.jpg');?>" alt="" title="Travel Adventure Image"/> 
+                <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_4.png');?>" alt="" title="Documents required"/> 
                 </a> 
             </div>
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/g5.jpg');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/finland_flag.jpg');?>" alt="" title="Travel Adventure Image"/> 
+                <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_5.png');?>" alt="" title="Documents required"/> 
                 </a> 
             </div> 
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/g6.jpg');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/south_africa_flag.jpg');?>" alt="" title="Travel Adventure Image"/> 
+                <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_6.png');?>" alt="" title="Documents required"/> 
+                </a> 
+            </div> 
+			<div class="col-sm-4 col-xs-6 w3gallery-grids">
+                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_7.png');?>" alt="" title="Documents required"/> 
+                </a> 
+            </div> 
+			<div class="col-sm-4 col-xs-6 w3gallery-grids">
+                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_8.png');?>" alt="" title="Documents required"/> 
+                </a> 
+            </div> 
+			<div class="col-sm-4 col-xs-6 w3gallery-grids">
+                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_9.png');?>" alt="" title="Documents required"/> 
+                </a> 
+            </div> 
+			<div class="col-sm-4 col-xs-6 w3gallery-grids">
+                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_10.png');?>" alt="" title="Documents required"/> 
+                </a> 
+            </div> 
+			<div class="col-sm-4 col-xs-6 w3gallery-grids">
+                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_11.png');?>" alt="" title="Documents required"/> 
+                </a> 
+            </div> 
+			<div class="col-sm-4 col-xs-6 w3gallery-grids">
+                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_12.png');?>" alt="" title="Documents required"/> 
+                </a> 
+            </div> 
+			<div class="col-sm-4 col-xs-6 w3gallery-grids">
+                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                    <img src="<?php echo base_url('/assets/images/country_13.png');?>" alt="" title="Documents required"/> 
                 </a> 
             </div> 
             <!-- Additional image sections can be added here -->
