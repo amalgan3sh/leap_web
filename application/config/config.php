@@ -37,6 +37,11 @@ $config['display_errors'] = FALSE;
 */
 $config['index_page'] = 'index.php';
 
+
+//Google Maps API Key
+
+$config['maps_api'] = '';
+
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL
