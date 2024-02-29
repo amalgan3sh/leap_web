@@ -645,11 +645,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 
 <!-- map -->
 <div class="w3agile-map">
-<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=%D9%88%D9%83%D8%A7%D9%84%D8%A9%20%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B4%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%B3%D9%81%D8%B1%20%D9%88%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9%20%2F%20Leap%20Visa%20Travel%20Agency&key=AIzaSyAVm89tTseC4m800g-ho_ervtc6a6MRt0k
-	
-	
-	
-	........"></iframe>
+<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D9%83%D8%A7%D9%84%D8%A9%20%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B4%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%B3%D9%81%D8%B1%20%D9%88%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9%20/%20+(Leap%20Visa%20Travels)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe>
 </div>
 <!-- //map -->
 			
