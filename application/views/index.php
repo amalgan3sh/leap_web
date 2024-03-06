@@ -19,7 +19,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="<?php echo base_url('/assets/css/flexslider.css'); ?>" type="text/css" media="screen" /> <!-- Testimonials js-->
 
 <link href='<?php echo base_url('/assets/css/simplelightbox.min.css'); ?>' rel='stylesheet' type='text/css'> <!-- lightbox css --> <!-- gallery js -->
-
+<link rel="icon" href="<?php echo base_url('/assets/images/logo.png'); ?>" />
 <!-- default css files -->
 	<link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.css'); ?>" type="text/css" media="all">
 	<link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css'); ?>" type="text/css" media="all">
@@ -35,18 +35,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Translator -->
 
 	<!-- jQuery Is Required -->
-<script src="/path/to/cdn/jquery.slim.min.js"></script>
 
 <!-- Bootstrap -->
-<link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
-<script src="/path/to/cdn/bootstrap.min.js"></script>
 
 <!-- Bootstrap Select -->
-<link rel="stylesheet" href="/path/to/cdn/bootstrap-select.min.css" />
-<script src="/path/to/cdn/bootstrap-select.min.js"></script>
 
 <!-- Flag Icon -->
-<link rel="stylesheet" href="/path/to/cdn/flag-icon.min.css" />
+
 
 
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
@@ -81,7 +76,7 @@ $logo = "assets/images/logo.png";
 							<li class="scroll menu__item"><a href="index.html" class="menu__link">Home</a></li>
 							<li class="scroll menu__item"><a href="#about" class="scroll menu__link">About</a></li>
 							<li class="scroll menu__item"><a href="#team" class="scroll menu__link">Services</a></li>
-							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link">Gallery</a></li>
+							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link">Visa Services</a></li>
 							<li class="scroll menu__item"><a href="#testimonials" class="scroll menu__link">Medical</a></li>
 							<li class="scroll menu__item"><a href="#contact" class="scroll menu__link">Contact</a></li>
 						</ul>
@@ -376,7 +371,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 <!-- gallery -->
 <div class="gallery" id="gallery">  
     <div class="container"> 
-        <h3 class="w3ls-title">Our Gallery</h3>
+        <h3 class="w3ls-title">Visa Services</h3>
         <div class="gallery-agileinfo">
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
@@ -607,7 +602,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 				<div class="col-md-6 contact-form-left">
 					<div class="w3layouts-contact-form-top">
 						<h3>Leap Visa Travels</h3>
-						<p>Pellentesque eget mi nec est tincidunt accumsan. Proin fermentum dignissim justo, vel euismod justo sodales vel. In non condimentum mauris. Maecenas condimentum interdum lacus, ac varius nisl dignissim ac.</p>
+						<p>Located in: Opposite to Dove Plaza<br>4486 Umm Al Hamam St, Umm Al Hamam Al Sharqi, <br>حي, 6803, Riyadh 12321, Saudi Arabia</p>
 					</div>
 					<div class="agileits-contact-address">
 						<h3>Follow us on</h3>
@@ -660,7 +655,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 				<li><a href="#home" class="scroll">Home</a></li>
 				<li><a href="#about" class="scroll">About</a></li>
 				<li><a href="#team" class="scroll">Team</a></li>
-				<li><a href="#gallery" class="scroll">Gallery</a></li>
+				<li><a href="#gallery" class="scroll">Visa Services</a></li>
 				<li><a href="#testimonials" class="scroll">Testimonials</a></li>
 				<li><a href="#blog" class="scroll">Blog</a></li>
 			</ul>
@@ -885,8 +880,8 @@ In addition to our visa services, we also offer a wide array of travel solutions
 				message : document.getElementById("message").value,
 				subject : document.getElementById("subject").value
 			};
-
-			emailjs.send("service_x4lps6s","template_zmsgx1k",params).then((res)=>{
+			console.log(params);
+			emailjs.send("service_ab7rpak","template_zmsgx1k",params).then((res)=>{
 				// alert("Success! " +res.status);
 				document.getElementById("mail_msg").innerHTML='<h5 style="color:#4BB543">Mail Send Successfully!</h5>';
 				document.getElementById("send_mail").value="Submit";
@@ -895,7 +890,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 				document.getElementById("message").value='';
 				document.getElementById("subject").value='';
 			},(err)=>{
-				// alert("Something Went Wrong..",err);
+				console.log(err);
 				document.getElementById("mail_msg").innerHTML='<h5 style="color:#FF3333">Something Went Wrong, Please Try Again!</h5>';
 				document.getElementById("send_mail").value="Submit";
 			});
