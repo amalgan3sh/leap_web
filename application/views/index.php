@@ -447,44 +447,74 @@ In addition to our visa services, we also offer a wide array of travel solutions
                     </div>
                 </a> 
             </div> 
-			<div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_10.png');?>" alt="" title="Documents required"/> 
-					<div class="overlay">
-                        <span class="text">Mexico</span>
-                    </div>
-                </a> 
-            </div> 
-			<div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_11.png');?>" alt="" title="Documents required"/> 
-					<div class="overlay">
-                        <span class="text">Canada</span>
-                    </div>
-                </a> 
-            </div> 
-			<div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_12.png');?>" alt="" title="Documents required"/> 
-					<div class="overlay">
-                        <span class="text">UK</span>
-                    </div>
-                </a> 
-            </div> 
-			<div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_13.png');?>" alt="" title="Documents required"/> 
-					<div class="overlay">
-                        <span class="text">USA</span>
-                    </div>
-                </a> 
-            </div> 
-            <!-- Additional image sections can be added here -->
+			 <!-- Additional country sections (initially hidden) -->
+            <div class="additional-countries" style="display: none;">
+                <!-- Mexico -->
+                <div class="col-sm-4 col-xs-6 w3gallery-grids">
+                    <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                        <img src="<?php echo base_url('/assets/images/country_10.png');?>" alt="" title="Documents required"/> 
+                        <div class="overlay">
+                            <span class="text">Mexico</span>
+                        </div>
+                    </a> 
+                </div> 
+                <!-- Canada -->
+                <div class="col-sm-4 col-xs-6 w3gallery-grids">
+                    <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                        <img src="<?php echo base_url('/assets/images/country_11.png');?>" alt="" title="Documents required"/> 
+                        <div class="overlay">
+                            <span class="text">Canada</span>
+                        </div>
+                    </a> 
+                </div> 
+                <!-- UK -->
+                <div class="col-sm-4 col-xs-6 w3gallery-grids">
+                    <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                        <img src="<?php echo base_url('/assets/images/country_12.png');?>" alt="" title="Documents required"/> 
+                        <div class="overlay">
+                            <span class="text">UK</span>
+                        </div>
+                    </a> 
+                </div> 
+                <!-- USA -->
+                <div class="col-sm-4 col-xs-6 w3gallery-grids">
+                    <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                        <img src="<?php echo base_url('/assets/images/country_13.png');?>" alt="" title="Documents required"/> 
+                        <div class="overlay">
+                            <span class="text">USA</span>
+                        </div>
+                    </a> 
+                </div> 
+            </div>
+
+            <!-- View More button -->
+<div class="col-sm-12 text-center">
+    <button id="view-more-btn" onclick="toggleAdditionalCountries()">
+        <span id="view-more-icon" class="fa fa-chevron-down"></span> View More
+    </button>
+</div>
+
+            <!-- Clearfix -->
             <div class="clearfix"> </div>
         </div> 
     </div>
 </div>
 <!-- //gallery -->
+
+<script>
+    function toggleAdditionalCountries() {
+        var additionalCountries = document.querySelector('.additional-countries');
+        var viewMoreBtn = document.getElementById('view-more-btn');
+        
+        if (additionalCountries.style.display === 'none') {
+            additionalCountries.style.display = 'block';
+            viewMoreBtn.textContent = 'View Less';
+        } else {
+            additionalCountries.style.display = 'none';
+            viewMoreBtn.textContent = 'View More';
+        }
+    }
+</script>
 
 
 
