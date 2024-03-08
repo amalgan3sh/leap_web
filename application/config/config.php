@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost:8080/leap_web/leap_web/';
+
 $config['display_errors'] = FALSE;
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,11 @@ $config['display_errors'] = FALSE;
 |
 */
 $config['index_page'] = 'index.php';
+
+
+//Google Maps API Key
+
+$config['maps_api'] = '';
 
 /*
 |--------------------------------------------------------------------------
