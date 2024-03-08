@@ -2351,23 +2351,18 @@ button.close {
 }
 /* responsive design */
 
-/* CSS for Hover Effect */
+/* Updated CSS without Hover Effect */
 .overlay {
     position: absolute;
-    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: opacity 0.5s ease;
-    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.w3gallery-grids:hover .overlay {
-    opacity: 1;
+    height: 50px;
+    width: inherit; /* Set width to auto to match image width */
 }
 
 .text {
@@ -2375,3 +2370,10 @@ button.close {
     font-size: 20px;
     text-align: center;
 }
+
+/* Optional: Adjust image container height to accommodate the overlay */
+.w3gallery-grids {
+    position: relative;
+}
+
+
