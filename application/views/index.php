@@ -195,7 +195,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
 								<div class="panel-body panel_text">
-									Sed lectus tellus sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget leo sodales adipiscing.
+									At We Leap Visa Travel Agency, we're more than just travel facilitators - we're dream enablers. With meticulous attention to detail and a passion for crafting unforgettable experiences, we take your travel aspirations and turn them into reality. Whether it's exploring ancient ruins in Greece, savoring street food in Thailand, or studying abroad in Europe, we're here to make your dream journeys come true. Let us be your partners in adventure, guiding you every step of the way towards your next unforgettable experience.
 								</div>
 							</div>
 						</div>
@@ -209,7 +209,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
 								<div class="panel-body panel_text">
-									Feugiat porttitor nulla Sed lectus tellus sodales id elit a,  Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget leo sodales adipiscing.
+									At We Leap Visa Travel Agency, we believe that every journey begins with a single step and every adventure starts with a dream. Let's turn your wanderlust into a well-crafted plan. Whether you're envisioning a relaxing beach getaway, an exhilarating safari, or a cultural immersion in a bustling metropolis, we're here to transform your travel aspirations into a meticulously planned itinerary. Together, let's embark on a journey where every moment is an opportunity for discovery and every destination becomes a cherished memory. Let's travel and call it a plan.
 								</div>
 							</div>
 						</div>
@@ -223,7 +223,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							</div>
 							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
 								<div class="panel-body panel_text">
-									Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget leo sodales adipiscing. Sed lectus tellus, sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia. 
+									At We Leap Visa Travel Agency, we understand that the true essence of travel lies not only in the destinations you visit but also in the experiences you accumulate along the way. Whether you're wandering through cobblestone streets in Europe, marveling at natural wonders in South America, or immersing yourself in the vibrant cultures of Asia, each journey is a reflection of your unique spirit and curiosity. Wherever your wanderlust takes you, we're here to ensure that every moment is filled with wonder, discovery, and unforgettable memories. Because in the end, it's not just about where you go, but the person you become along the way.
 								</div>
 							</div>
 						</div>
@@ -237,7 +237,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							</div>
 							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
 								<div class="panel-body panel_text">
-									Sed lectus tellus, sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget leo sodales adipiscing.
+									At We Leap Visa Travel Agency, we believe that adventures are not just about exploring new places but also about discovering oneself. Whether you're trekking through rugged mountains, diving into crystal-clear waters, or immersing yourself in local cultures, every adventure is an opportunity for growth and learning. From the challenges you overcome to the connections you make with people from around the world, each experience adds depth to your understanding of the world and yourself. Let us be your guides on this journey of discovery, where every adventure is a lesson waiting to be learned.
 								</div>
 							</div>
 						</div>
@@ -381,13 +381,15 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 </a> 
             </div> 
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_2.png');?>" alt="" title="Documents required"/> 
-					<div class="overlay">
+                <div class="figure">
+                    <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>">
+                        <img src="<?php echo base_url('/assets/images/country_2.png');?>" alt="" title="Documents required"/> 
+                    </a>
+                    <div class="overlay">
                         <span class="text">India</span>
                     </div>
-                </a> 
-            </div>
+                </div> 
+            </div> 
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
                     <img src="<?php echo base_url('/assets/images/country_3.png');?>" alt="" title="Documents required"/> 
@@ -444,44 +446,74 @@ In addition to our visa services, we also offer a wide array of travel solutions
                     </div>
                 </a> 
             </div> 
-			<div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_10.png');?>" alt="" title="Documents required"/> 
-					<div class="overlay">
-                        <span class="text">Mexico</span>
-                    </div>
-                </a> 
-            </div> 
-			<div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_11.png');?>" alt="" title="Documents required"/> 
-					<div class="overlay">
-                        <span class="text">Canada</span>
-                    </div>
-                </a> 
-            </div> 
-			<div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_12.png');?>" alt="" title="Documents required"/> 
-					<div class="overlay">
-                        <span class="text">UK</span>
-                    </div>
-                </a> 
-            </div> 
-			<div class="col-sm-4 col-xs-6 w3gallery-grids">
-                <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_13.png');?>" alt="" title="Documents required"/> 
-					<div class="overlay">
-                        <span class="text">USA</span>
-                    </div>
-                </a> 
-            </div> 
-            <!-- Additional image sections can be added here -->
+			 <!-- Additional country sections (initially hidden) -->
+            <div class="additional-countries" style="display: none;">
+                <!-- Mexico -->
+                <div class="col-sm-4 col-xs-6 w3gallery-grids">
+                    <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                        <img src="<?php echo base_url('/assets/images/country_10.png');?>" alt="" title="Documents required"/> 
+                        <div class="overlay">
+                            <span class="text">Mexico</span>
+                        </div>
+                    </a> 
+                </div> 
+                <!-- Canada -->
+                <div class="col-sm-4 col-xs-6 w3gallery-grids">
+                    <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                        <img src="<?php echo base_url('/assets/images/country_11.png');?>" alt="" title="Documents required"/> 
+                        <div class="overlay">
+                            <span class="text">Canada</span>
+                        </div>
+                    </a> 
+                </div> 
+                <!-- UK -->
+                <div class="col-sm-4 col-xs-6 w3gallery-grids">
+                    <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                        <img src="<?php echo base_url('/assets/images/country_12.png');?>" alt="" title="Documents required"/> 
+                        <div class="overlay">
+                            <span class="text">UK</span>
+                        </div>
+                    </a> 
+                </div> 
+                <!-- USA -->
+                <div class="col-sm-4 col-xs-6 w3gallery-grids">
+                    <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
+                        <img src="<?php echo base_url('/assets/images/country_13.png');?>" alt="" title="Documents required"/> 
+                        <div class="overlay">
+                            <span class="text">USA</span>
+                        </div>
+                    </a> 
+                </div> 
+            </div>
+
+            <!-- View More button -->
+<div class="col-sm-12 text-center">
+    <button id="view-more-btn" onclick="toggleAdditionalCountries()">
+        <span id="view-more-icon" class="fa fa-chevron-down"></span> View More
+    </button>
+</div>
+
+            <!-- Clearfix -->
             <div class="clearfix"> </div>
         </div> 
     </div>
 </div>
 <!-- //gallery -->
+
+<script>
+    function toggleAdditionalCountries() {
+        var additionalCountries = document.querySelector('.additional-countries');
+        var viewMoreBtn = document.getElementById('view-more-btn');
+        
+        if (additionalCountries.style.display === 'none') {
+            additionalCountries.style.display = 'block';
+            viewMoreBtn.textContent = 'View Less';
+        } else {
+            additionalCountries.style.display = 'none';
+            viewMoreBtn.textContent = 'View More';
+        }
+    }
+</script>
 
 
 
