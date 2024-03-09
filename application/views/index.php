@@ -68,7 +68,13 @@ $logo = "assets/images/logo.png";
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#"><img class="logo_main" src="<?php echo $logo; ?>" alt="Logo"></span></a>
+					<div class="travel-with-us-con">
+						<a href="#gallery" class="menu__link" >Explore</a>
+						<!-- <button type="button" ontap="#gallery" class="travel-with-us">Travel With Us</button> -->
+					</div>
 				</div>
+				
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu--iris">
@@ -76,7 +82,7 @@ $logo = "assets/images/logo.png";
 							<li class="scroll menu__item"><a href="index.html" class="menu__link">Home</a></li>
 							<li class="scroll menu__item"><a href="#about" class="scroll menu__link">About</a></li>
 							<li class="scroll menu__item"><a href="#team" class="scroll menu__link">Services</a></li>
-							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link">Visa Services</a></li>
+							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link">Explore</a></li>
 							<li class="scroll menu__item"><a href="#testimonials" class="scroll menu__link">Medical</a></li>
 							<li class="scroll menu__item"><a href="#contact" class="scroll menu__link">Contact</a></li>
 						</ul>
@@ -87,15 +93,8 @@ $logo = "assets/images/logo.png";
 								<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>  
 							</div>
 						</div>
-						<div>	
-						<div id="google_translate_element"></div>
-						<select class="selectpicker" data-width="fit" onchange="translateLanguage(this.value);">
-							<option data-content='<span class="flag-icon flag-icon-af"></span> Afrikaans' value="Afrikaans">Afrikaans</option>
-							<option  data-content='<span class="flag-icon flag-icon-al"></span> Albanian' value="Albanian">Albanian</option>
-							<option  data-content='<span class="flag-icon flag-icon-ar"></span> Arabic' value="Arabic">Arabic</option>
-							<option  data-content='<span class="flag-icon flag-icon-am"></span> Armenian' value="Armenian">Armenian</option>
-							<option  data-content='<span class="flag-icon flag-icon-az"></span> Azerbaijani' value="Azerbaijani">Azerbaijani</option>
-						</select>
+						<div class="google-translate">
+							<div id="google_translate_element"></div>
 						</div>
 					</nav>
 				</div>
@@ -371,7 +370,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 <!-- gallery -->
 <div class="gallery" id="gallery">  
     <div class="container"> 
-        <h3 class="w3ls-title">Visa Services</h3>
+        <h3 class="w3ls-title">Explore</h3>
         <div class="gallery-agileinfo">
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
@@ -603,6 +602,8 @@ In addition to our visa services, we also offer a wide array of travel solutions
 					<div class="w3layouts-contact-form-top">
 						<h3>Leap Visa Travels</h3>
 						<p>Located in: Opposite to Dove Plaza<br>4486 Umm Al Hamam St, Umm Al Hamam Al Sharqi, <br>حي, 6803, Riyadh 12321, Saudi Arabia</p>
+						<p><b>Email: </b>info@leaptravelagency.com</p>
+						<p><b>Phone: </b>+966 0550588558</p>
 					</div>
 					<div class="agileits-contact-address">
 						<h3>Follow us on</h3>
@@ -901,9 +902,12 @@ In addition to our visa services, we also offer a wide array of travel solutions
 
 
 <script>
-		function googleTranslateElementInit() {
-  new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
-}
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
 
 function translateLanguage(lang) {
   googleTranslateElementInit();
