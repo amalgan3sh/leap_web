@@ -12,6 +12,7 @@ function toggleLanguage() {
         // If 'language' is not set, set it to 'en'
         $_SESSION['language'] = 'en';
     }
+    echo $_SESSION['language'];
 }
 ?>
 
@@ -20,6 +21,8 @@ function toggleLanguage() {
 <!-- Head -->
 <head>
 <title>Leap Visa</title>
+<meta http-equiv="Cache-Control" content="max-age=3600, public">
+<meta http-equiv="Expires" content="Thu, 31 Dec 2099 23:59:59 GMT">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <meta name="keywords" content="Travel Adventure a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -84,12 +87,22 @@ $logo = "assets/images/logo.png";
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu--iris">
 						<ul class="nav navbar-nav menu__list">
-							<li class="scroll menu__item"><a href="index.html" class="menu__link">Home</a></li>
+							<?php
+							if ($_SESSION['language'] == 'ar') {
+							echo '<li class="scroll menu__item"><a href="index.html" class="menu__link">Home</a></li>
 							<li class="scroll menu__item"><a href="#about" class="scroll menu__link">About</a></li>
 							<li class="scroll menu__item"><a href="#team" class="scroll menu__link">Services</a></li>
 							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link">Visa Services</a></li>
 							<li class="scroll menu__item"><a href="#testimonials" class="scroll menu__link">Medical</a></li>
-							<li class="scroll menu__item"><a href="#contact" class="scroll menu__link">Contact</a></li>
+							<li class="scroll menu__item"><a href="#contact" class="scroll menu__link">Contact</a></li>';
+						} if ($_SESSION['language'] == 'en') {
+							echo '<li class="scroll menu__item"><a href="index.html" class="menu__link">بيت</a></li>
+							<li class="scroll menu__item"><a href="#about" class="scroll menu__link">عن</a></li>
+							<li class="scroll menu__item"><a href="#team" class="scroll menu__link">خدمات</a></li>
+							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link">خدمات التأشيرات</a></li>
+							<li class="scroll menu__item"><a href="#testimonials" class="scroll menu__link">طبي</a></li>
+							<li class="scroll menu__item"><a href="#contact" class="scroll menu__link">اتصال</a></li>';
+						}?>
 						</ul>
 						<div class="w3_agileits_social">
 							<div class="social-icon">
@@ -232,19 +245,38 @@ echo '<div class="col-md-6 aboutleft">
 
 ?>
 		<div class="col-md-6 aboutright">
-			<h3>Why Choose Us?</h3>
+			 <?php 
+    if ($_SESSION['language'] == 'en') {
+        echo '<h3>Why Choose Us?</h3>';
+    }
+    if ($_SESSION['language'] == 'ar') {
+        echo '<h3>لماذا اخترتنا؟</h3>';
+    } 
+    ?>
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingOne">
 								<h4 class="panel-title asd">
 									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-										We Make your Dream come true
+										<?php if ($_SESSION['language'] == 'en') {
+											echo 'We Make your Dream come true';
+										}if ($_SESSION['language'] == 'ar') {
+									        echo 'نحن نجعل حلمك حقيقة';
+									    } 
+									    ?>
 									</a>
 								</h4>
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
 								<div class="panel-body panel_text">
-									At We Leap Visa Travel Agency, we're more than just travel facilitators - we're dream enablers. With meticulous attention to detail and a passion for crafting unforgettable experiences, we take your travel aspirations and turn them into reality. Whether it's exploring ancient ruins in Greece, savoring street food in Thailand, or studying abroad in Europe, we're here to make your dream journeys come true. Let us be your partners in adventure, guiding you every step of the way towards your next unforgettable experience.
+									<?php if ($_SESSION['language'] == 'en') {
+											echo 'At We Leap Visa Travel Agency, we are more than just travel facilitators - we arere dream enablers. With meticulous attention to detail and a passion for crafting unforgettable experiences, we take your travel aspirations and turn them into reality. Whether its exploring ancient ruins in Greece, savoring street food in Thailand, or studying abroad in Europe, we arere here to make your dream journeys come true. Let us be your partners in adventure, guiding you every step of the way towards your next unforgettable experience.';
+										}
+										if ($_SESSION['language'] == 'ar') {
+									        echo 'في وكالة We Leap Visa للسفريات، نحن أكثر من مجرد ميسري سفر - نحن عوامل تمكين الأحلام. مع الاهتمام الدقيق بالتفاصيل والشغف لصياغة تجارب لا تُنسى، فإننا نأخذ تطلعات السفر الخاصة بك ونحولها إلى حقيقة. سواء كان الأمر يتعلق باستكشاف الآثار القديمة في اليونان، أو تذوق طعام الشارع في تايلاند، أو الدراسة بالخارج في أوروبا، فنحن هنا لتحقيق رحلات أحلامك. اسمح لنا أن نكون شركاءك في المغامرة، ونرشدك في كل خطوة على الطريق نحو تجربتك التالية التي لا تُنسى.';
+									    } 
+									    ?>
+									
 								</div>
 							</div>
 						</div>
@@ -291,6 +323,7 @@ echo '<div class="col-md-6 aboutleft">
 							</div>
 						</div>
 					</div>
+		
 		</div>
 		<div class="clearfix"></div>
 	<!--count-->
