@@ -1,9 +1,20 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+// Start a session to store the selected language
+session_start();
+
+// Function to toggle between languages
+function toggleLanguage() {
+    // Check if the session variable 'language' is set
+    if(isset($_SESSION['language'])) {
+        // If 'language' is 'ar', set it to 'en'; otherwise, set it to 'ar'
+        $_SESSION['language'] = ($_SESSION['language'] == 'ar') ? 'en' : 'ar';
+    } else {
+        // If 'language' is not set, set it to 'en'
+        $_SESSION['language'] = 'en';
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- Head -->
@@ -88,15 +99,20 @@ $logo = "assets/images/logo.png";
 							</div>
 						</div>
 						<div>	
-						<div id="google_translate_element"></div>
-						<select class="selectpicker" data-width="fit" onchange="translateLanguage(this.value);">
-							<option data-content='<span class="flag-icon flag-icon-af"></span> Afrikaans' value="Afrikaans">Afrikaans</option>
-							<option  data-content='<span class="flag-icon flag-icon-al"></span> Albanian' value="Albanian">Albanian</option>
-							<option  data-content='<span class="flag-icon flag-icon-ar"></span> Arabic' value="Arabic">Arabic</option>
-							<option  data-content='<span class="flag-icon flag-icon-am"></span> Armenian' value="Armenian">Armenian</option>
-							<option  data-content='<span class="flag-icon flag-icon-az"></span> Azerbaijani' value="Azerbaijani">Azerbaijani</option>
-						</select>
-						</div>
+<div class="language-toggle">
+        <form method="post">
+            <button type="submit" name="toggle" value="1"><?php echo ($_SESSION['language'] == 'ar') ? 'English' : 'Arabic'; ?></button>
+        </form>
+    </div>
+
+<?php
+// Check if the toggle button is clicked
+if(isset($_POST['toggle'])) {
+    // Call the function to toggle the language
+    toggleLanguage();
+}
+?>
+
 					</nav>
 				</div>
 			</nav>
@@ -169,20 +185,52 @@ $logo = "assets/images/logo.png";
 <!-- about -->
 <div class="about" id="about">
 	<div class="container">
-		<div class="abouthead">
-			<h5>About us</h5>
-			<h2 class="heading">Who we are</h2>
-			<p>We Leap Visa Travel Agency, where travel dreams become reality. With over 10 years of unparalleled expertise in the travel and visa industry, we have been the guiding compass for countless travelers seeking seamless journeys and unforgettable experiences.</p>
-		</div>
-		<div class="col-md-6 aboutleft">
-			<h4>Our Trip</h4>
-			<!-- <h3>Travel Adventure</h3> -->
-			<p>Since 2013, we have been at the forefront of the travel and visa sector, offering a comprehensive range of services tailored to meet the diverse needs of our clients. From leisure travel to business trips, our experienced team is committed to delivering seamless experiences that exceed expectations.
+		<?php
+// Define the content for the about section in both languages
+		if ($_SESSION['language'] == 'en') {
+echo '<div class="abouthead">
+                            <h5>About us</h5>
+                            <h2 class="heading">Who we are</h2>
+                            <p>We Leap Visa Travel Agency, where travel dreams become reality. With over 10 years of unparalleled expertise in the travel and visa industry, we have been the guiding compass for countless travelers seeking seamless journeys and unforgettable experiences.</p>
+                        </div>';
+                    }
+                    if ($_SESSION['language'] == 'ar') {
+
+echo '<div class="abouthead">
+                            <h5>معلومات عنا</h5>
+                            <h2 class="heading">من نحن</h2>
+                            <p>حيث تصبح أحلام السفر حقيقة. مع أكثر من 10 سنوات من الخبرة التي لا مثيل لها في مجال السفر والتأشيرات، فقد كنا البوصلة التوجيهية لعدد لا يحصى من المسافرين الذين يبحثون عن رحلات سلسة وتجارب لا تنسى.</p>
+                        </div>';
+                    }
+                        ?>
+
+
+		<?php
+if ($_SESSION['language'] == 'en') {
+echo '<div class="col-md-6 aboutleft">
+                            <h4>Our Trip</h4>
+                            <!-- <h3>Travel Adventure</h3> -->
+                            <p>Since 2013, we have been at the forefront of the travel and visa sector, offering a comprehensive range of services tailored to meet the diverse needs of our clients. From leisure travel to business trips, our experienced team is committed to delivering seamless experiences that exceed expectations.
 
 As specialists in visa services, we streamline the often complex process of obtaining visas for travel to more than 13 countries worldwide. With in-depth knowledge of visa requirements and regulations, we guide our clients through every step of the application process, ensuring efficiency and peace of mind.
 
-In addition to our visa services, we also offer a wide array of travel solutions, including personalized trip planning, itinerary customization, and accommodation arrangements. Whether you're embarking on a solo adventure or planning a group excursion, our team is here to turn your travel dreams into reality.<br/>Join us on a journey of discovery and adventure. Experience the world with Leap Visa.</p>
-		</div>
+In addition to our visa services, we also offer a wide array of travel solutions, including personalized trip planning, itinerary customization, and accommodation arrangements. Whether you are embarking on a solo adventure or planning a group excursion, our team is here to turn your travel dreams into reality.<br/>Join us on a journey of discovery and adventure. Experience the world with Leap Visa.</p>
+                        </div>';
+                    }
+
+if ($_SESSION['language'] == 'ar') {
+echo '<div class="col-md-6 aboutleft">
+                            <h4>رحلتنا</h4>
+                            <!-- <h3>Travel Adventure</h3> -->
+                            <p>منذ عام 2013، كنا في طليعة قطاع السفر والتأشيرات، حيث نقدم مجموعة شاملة من الخدمات المصممة لتلبية الاحتياجات المتنوعة لعملائنا. من السفر الترفيهي إلى رحلات العمل، يلتزم فريقنا ذو الخبرة بتقديم تجارب سلسة تتجاوز التوقعات.
+
+باعتبارنا متخصصين في خدمات التأشيرات، فإننا نقوم بتبسيط العملية المعقدة غالبًا للحصول على تأشيرات للسفر إلى أكثر من 13 دولة حول العالم. بفضل المعرفة المتعمقة بمتطلبات ولوائح التأشيرة، نقوم بتوجيه عملائنا خلال كل خطوة من عملية تقديم الطلب، مما يضمن الكفاءة وراحة البال.
+
+بالإضافة إلى خدمات التأشيرات التي نقدمها، نقدم أيضًا مجموعة واسعة من حلول السفر، بما في ذلك التخطيط الشخصي للرحلات، وتخصيص خط سير الرحلة، وترتيبات الإقامة. سواء كنت تشرع في مغامرة منفردة أو تخطط لرحلة جماعية، فإن فريقنا موجود لتحويل أحلام السفر الخاصة بك إلى حقيقة.<br/>انضم إلينا في رحلة الاكتشاف والمغامرة. اكتشف العالم مع Leap Visa.</p>
+                        </div>';
+}
+
+?>
 		<div class="col-md-6 aboutright">
 			<h3>Why Choose Us?</h3>
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
@@ -790,6 +838,8 @@ In addition to our visa services, we also offer a wide array of travel solutions
 	</div>
 <!-- //bootstrap-pop-up -->
 
+
+
 <!-- Default-JavaScript-File -->
 	<script type="text/javascript" src="<?php echo base_url('/assets/js/jquery-2.1.4.min.js');?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('/assets/js/bootstrap.js'); ?>"></script>
@@ -942,6 +992,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 	</script>
 
 <!--EmailJS End-->
+
 
 
 <script>

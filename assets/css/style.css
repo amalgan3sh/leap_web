@@ -2376,4 +2376,68 @@ button.close {
     position: relative;
 }
 
+.toggle-bar {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-bar-checkbox {
+  display: none;
+}
+
+.toggle-bar-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 34px;
+}
+
+.toggle-bar-inner {
+  display: flex;
+  width: 200%;
+}
+
+.toggle-bar-on,
+.toggle-bar-off {
+  display: inline-block;
+  width: 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 30px;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.toggle-bar-switch {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.toggle-bar-checkbox:checked + .toggle-bar-label .toggle-bar-switch {
+  transform: translateX(100%);
+}
+
+.toggle-bar-checkbox:checked + .toggle-bar-label .toggle-bar-on {
+  color: #fff;
+}
+
+.toggle-bar-checkbox:checked + .toggle-bar-label .toggle-bar-off {
+  color: #666;
+}
+
+
+
+
 
