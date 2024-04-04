@@ -88,13 +88,16 @@ $logo = "assets/images/logo.png";
 						</ul>
 						<div class="w3_agileits_social">
 							<div class="social-icon">
-								<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
-								<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a> 
-								<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>  
+								<a href="https://www.facebook.com/profile.php?id=61555287373980" target="_blank" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
+								<a href="https://www.snapchat.com/add/leapvisa?share_id=rpCUc_9SXX8&locale=en-IN" target="_blank" class="social-button snapchat"><i class="fa fa-snapchat"></i></a> 
+								<a href="https://twitter.com/LP_Visa_Riyadh" target="_blank" class="social-button twitter"><i class="fa fa-twitter"></i></a> 
 							</div>
 						</div>
-						<div class="google-translate">
-							<div id="google_translate_element"></div>
+						<div class="lang_select">
+							<select class="lang_drop">
+								<option value="">EN</option>
+								<option value="">AR</option>
+							</select>
 						</div>
 					</nav>
 				</div>
@@ -375,7 +378,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
         	<!-- UK -->
                 <div class="col-sm-4 col-xs-6 w3gallery-grids">
                     <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                        <img src="<?php echo base_url('/assets/images/country_12.png');?>" alt="" title="Documents required"/> 
+                        <img class="flag" src="<?php echo base_url('/assets/images/flags/UK_flag.jpg');?>" alt="" title="Documents required"/> 
                         <div class="overlay">
                             <span class="text">UK</span>
                         </div>
@@ -384,7 +387,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <!-- USA -->
                 <div class="col-sm-4 col-xs-6 w3gallery-grids">
                     <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                        <img src="<?php echo base_url('/assets/images/country_13.png');?>" alt="" title="Documents required"/> 
+                        <img class="flag" src="<?php echo base_url('/assets/images/flags/usa_flag.jpg');?>" alt="" title="Documents required"/> 
                         <div class="overlay">
                             <span class="text">USA</span>
                         </div>
@@ -393,7 +396,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <!-- Canada -->
                 <div class="col-sm-4 col-xs-6 w3gallery-grids">
                     <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                        <img src="<?php echo base_url('/assets/images/country_11.png');?>" alt="" title="Documents required"/> 
+                        <img class="flag" src="<?php echo base_url('/assets/images/flags/canada_flag.jpg');?>" alt="" title="Documents required"/> 
                         <div class="overlay">
                             <span class="text">Canada</span>
                         </div>
@@ -401,7 +404,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 </div>
                 <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_4.png');?>" alt="" title="Documents required"/> 
+                    <img class="flag" src="<?php echo base_url('/assets/images/flags/brazilian-flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
                         <span class="text">Brazil</span>
                     </div>
@@ -409,7 +412,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
             </div>
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                     <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
-                        <img src="<?php echo base_url('/assets/images/country_10.png');?>" alt="" title="Documents required"/> 
+                        <img class="flag" src="<?php echo base_url('/assets/images/flags/mexico_flag.jpg');?>" alt="" title="Documents required"/> 
                         <div class="overlay">
                             <span class="text">Mexico</span>
                         </div>
@@ -417,7 +420,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 </div>
                 <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_6.png');?>" alt="" title="Documents required"/> 
+                    <img class="flag" src="<?php echo base_url('/assets/images/flags/australia_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
                         <span class="text">Australia</span>
                     </div>
@@ -426,7 +429,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
             <!-- peru -->
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_7.png');?>" alt="" title="Documents required"/> 
+                    <img class="flag" src="<?php echo base_url('/assets/images/flags/china_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
                         <span class="text">China</span>
                     </div>
@@ -435,7 +438,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <div class="figure">
                     <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>">
-                        <img src="<?php echo base_url('/assets/images/country_2.png');?>" alt="" title="Documents required"/> 
+                        <img class="flag" src="<?php echo base_url('/assets/images/flags/indian_flag.jpg');?>" alt="" title="Documents required"/> 
                     </a>
                     <div class="overlay">
                         <span class="text">India</span>
@@ -444,7 +447,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
             </div> 
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_9.png');?>" alt="" title="Documents required"/> 
+                    <img class="flag" src="<?php echo base_url('/assets/images/flags/european_union_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
                         <span class="text">EU</span>
                     </div>
@@ -461,7 +464,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 
                 <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_3.png');?>" alt="" title="Documents required"/> 
+                    <img class="flag" src="<?php echo base_url('/assets/images/flags/Russia_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
                         <span class="text">Russia (Online)</span>
                     </div>
@@ -469,7 +472,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
             </div>
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_8.png');?>" alt="" title="Documents required"/> 
+                    <img class="flag" src="<?php echo base_url('/assets/images/flags/japan_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
                         <span class="text">Japan (Online)</span>
                     </div>
@@ -477,7 +480,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
             </div>   
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_1.png');?>" alt="" title="Documents required"/> 
+                    <img class="flag" src="<?php echo base_url('/assets/images/flags/gueina_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
                         <span class="text">Guinea (Online)</span>
                     </div>
@@ -488,7 +491,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
             
             <div class="col-sm-4 col-xs-6 w3gallery-grids">
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
-                    <img src="<?php echo base_url('/assets/images/country_5.png');?>" alt="" title="Documents required"/> 
+                    <img class="flag" src="<?php echo base_url('/assets/images/flags/flag-thailand.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
                         <span class="text">Thailand</span>
                     </div>
@@ -499,14 +502,15 @@ In addition to our visa services, we also offer a wide array of travel solutions
             </div>
 
             <!-- View More button -->
-<div class="col-sm-12 text-center">
-    <button id="view-more-btn" onclick="toggleAdditionalCountries()">
-        <span id="view-more-icon" class="fa fa-chevron-down"></span> View More
-    </button>
-</div>
+
 
             <!-- Clearfix -->
             <div class="clearfix"> </div>
+			<div class="col-sm-12 text-center">
+    <button id="view-more-btn" class="view-more-btn" onclick="toggleAdditionalCountries()">
+        <span id="view-more-icon" class="fa fa-chevron-down"></span> View More
+    </button>
+</div>
         </div> 
     </div>
 </div>
@@ -516,13 +520,15 @@ In addition to our visa services, we also offer a wide array of travel solutions
     function toggleAdditionalCountries() {
         var additionalCountries = document.querySelector('.additional-countries');
         var viewMoreBtn = document.getElementById('view-more-btn');
-        
+		var viewMoreIcon = document.getElementById('view-more-icon');
+
         if (additionalCountries.style.display === 'none') {
             additionalCountries.style.display = 'block';
-            viewMoreBtn.textContent = 'View Less';
+            viewMoreBtn.innerHTML = '<span id="view-more-icon" class="fa fa-chevron-up"></span> View Less';
         } else {
+			viewMoreIcon.className = "fa fa-chevron-down";
             additionalCountries.style.display = 'none';
-            viewMoreBtn.textContent = 'View More';
+            viewMoreBtn.innerHTML = '<span id="view-more-icon" class="fa fa-chevron-down"></span> View More';
         }
     }
 </script>
@@ -653,10 +659,10 @@ In addition to our visa services, we also offer a wide array of travel solutions
 						<h3>Follow us on</h3>
 						<div class="social">
 							<ul>
-								<li><a href="#" class="fa fa-facebook"> </a></li>
-								<li><a href="#" class="fa fa-twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus"> </a></li> 
-								<li><a href="#" class="fa fa-linkedin"> </a></li> 
+								<li><a href="https://www.facebook.com/profile.php?id=61555287373980" target="_blank" class="fa fa-facebook"> </a></li>
+								<li><a href="https://www.snapchat.com/add/leapvisa?share_id=rpCUc_9SXX8&locale=en-IN" target="_blank" style="color:yellow;background-color:#084A94" class="fa fa-snapchat" > </a></li>
+								<li><a href="https://twitter.com/LP_Visa_Riyadh" target="_blank" class="fa fa-twitter" > </a></li>
+								<!-- <li><a href="#" class="fa fa-linkedin"> </a></li>  -->
 							</ul>
 						</div> 
 					</div>
@@ -682,7 +688,10 @@ In addition to our visa services, we also offer a wide array of travel solutions
 		</div>
 	</div>
 <!-- contact -->
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="http://Wa.me/+966550588558?text=Hi" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
 <!-- map -->
 <div class="w3agile-map">
 <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D9%83%D8%A7%D9%84%D8%A9%20%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D8%A3%D8%B4%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%B3%D9%81%D8%B1%20%D9%88%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9%20/%20+(Leap%20Visa%20Travels)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe>
@@ -699,10 +708,10 @@ In addition to our visa services, we also offer a wide array of travel solutions
 			<ul>
 				<li><a href="#home" class="scroll">Home</a></li>
 				<li><a href="#about" class="scroll">About</a></li>
-				<li><a href="#team" class="scroll">Team</a></li>
-				<li><a href="#gallery" class="scroll">Visa Services</a></li>
-				<li><a href="#testimonials" class="scroll">Testimonials</a></li>
-				<li><a href="#blog" class="scroll">Blog</a></li>
+				<li><a href="#team" class="scroll">Our Services</a></li>
+				<li><a href="#gallery" class="scroll">Explore</a></li>
+				<li><a href="#testimonials" class="scroll">Medical</a></li>
+				<li><a href="#contact" class="scroll">Contact</a></li>
 			</ul>
 		</div>
 		<div class="clearfix"></div>

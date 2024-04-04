@@ -2455,16 +2455,18 @@ button.close {
 
 /* Updated CSS without Hover Effect */
 .overlay {
-    position: absolute;
+	position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: inherit; /* Set width to auto to match image width */
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;		
 }
 
 .text {
@@ -2476,6 +2478,89 @@ button.close {
 /* Optional: Adjust image container height to accommodate the overlay */
 .w3gallery-grids {
     position: relative;
+
+}
+
+.view-more-btn{
+	margin-top: 3rem;
+	border: none;
+	height: 50px;
+	color: #fff;
+	background-color: #084A94;
+	border-radius: 8px;
+}
+
+.flag{
+	height: 200px;
+	width: 100%;
+	border-radius: 20px;
+	display: block;
 }
 
 
+/*Whatsapp float*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.lang_select{
+	padding-top: 15px;
+}
+
+
+.lang_drop {
+	/* Reset Select */
+	appearance: none;
+	outline: 10px red;
+	border: 0;
+	box-shadow: none;
+	/* Personalize */
+	flex: 1;
+	padding: 0 1em;
+	color: #252525;
+	background-color: var(--darkgray);
+	background-image: none;
+	cursor: pointer;
+	font-weight: bold;
+  }
+  /* Remove IE arrow */
+  .lang_drop::-ms-expand {
+	display: none;
+  }
+
+.lang_drop{
+	position: relative;
+	display: flex;
+	width: 4em;
+	height: 2em;
+	border-radius: .25em;
+	overflow: hidden;
+  }
+
+.lang_drop::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	background-color: #34495e;
+	transition: .25s all ease;
+	pointer-events: none;
+  }
+
+  
