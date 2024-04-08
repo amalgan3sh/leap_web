@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:80/leap_web/';
+$config['base_url'] = 'http://localhost/leap_web/';
+
 $config['display_errors'] = FALSE;
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,11 @@ $config['display_errors'] = FALSE;
 |
 */
 $config['index_page'] = 'index.php';
+
+
+//Google Maps API Key
+
+$config['maps_api'] = '';
 
 /*
 |--------------------------------------------------------------------------
