@@ -1,14 +1,47 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+include('language.php');
+// Start a session to store the selected language
+// session_start();
+
+// // Function to toggle between languages
+// function toggleLanguage() {
+
+//     // Check if the session variable 'language' is set
+//     if(isset($_SESSION['language'])) {
+//         // If 'language' is 'ar', set it to 'en'; otherwise, set it to 'ar'
+//         $_SESSION['language'] = ($_SESSION['language'] == 'ar') ? 'en' : 'ar';
+//     } else {
+//         // If 'language' is not set, set it to 'en'
+//         $_SESSION['language'] = 'en';
+//     }
+//     echo $_SESSION['language'];
+// }
+
+
+$en_select='';
+$ar_select='';
+$language='';
+$dir='';
+
+if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['language'])){
+	$en_select='selected';
+	$language='en';
+	$dir='ltr';
+}else{
+	$ar_select='selected';
+	$language='ar';
+	$dir='rtl';
+}
+// <?php echo $en_select 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- Head -->
 <head>
 <title>Leap Visa</title>
+<meta http-equiv="Cache-Control" content="max-age=3600, public">
+<meta http-equiv="Expires" content="Thu, 31 Dec 2099 23:59:59 GMT">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <meta name="keywords" content="Travel Adventure a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -79,26 +112,32 @@ $logo = "assets/images/logo.png";
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu--iris">
 						<ul class="nav navbar-nav menu__list">
-							<li class="scroll menu__item"><a href="index.html" class="menu__link">Home</a></li>
-							<li class="scroll menu__item"><a href="#about" class="scroll menu__link">About</a></li>
-							<li class="scroll menu__item"><a href="#team" class="scroll menu__link">Services</a></li>
-							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link">Explore</a></li>
-							<li class="scroll menu__item"><a href="#testimonials" class="scroll menu__link">Medical</a></li>
-							<li class="scroll menu__item"><a href="#contact" class="scroll menu__link">Contact</a></li>
+							
+							<li class="scroll menu__item"><a href="index.html" class="menu__link"><?php echo $top_nav[$language]['0'] ?></a></li>
+							<li class="scroll menu__item"><a href="#about" class="scroll menu__link"><?php echo $top_nav[$language]['1'] ?></a></li>
+							<li class="scroll menu__item"><a href="#team" class="scroll menu__link"><?php echo $top_nav[$language]['2'] ?></a></li>
+							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link"><?php echo $top_nav[$language]['3'] ?></a></li>
+							<li class="scroll menu__item"><a href="#testimonials" class="scroll menu__link"><?php echo $top_nav[$language]['4'] ?></a></li>
+							<li class="scroll menu__item"><a href="#contact" class="scroll menu__link"><?php echo $top_nav[$language]['5'] ?></a></li>
+						
 						</ul>
 						<div class="w3_agileits_social">
 							<div class="social-icon">
 								<a href="https://www.facebook.com/profile.php?id=61555287373980" target="_blank" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
 								<a href="https://www.snapchat.com/add/leapvisa?share_id=rpCUc_9SXX8&locale=en-IN" target="_blank" class="social-button snapchat"><i class="fa fa-snapchat"></i></a> 
 								<a href="https://twitter.com/LP_Visa_Riyadh" target="_blank" class="social-button twitter"><i class="fa fa-twitter"></i></a> 
+								 <select onchange="set_language()" name="language" id="language" class="lang_drop">
+									<option value="en" <?php echo $en_select ?>><i class="fa fa-glob"></i> EN</option>
+									<option value="ar" <?php echo $ar_select ?>><i class="fa fa-glob"></i> AR</option>
+								</select>
+								
 							</div>
 						</div>
-						<div class="lang_select">
-							<select class="lang_drop">
-								<option value="">EN</option>
-								<option value="">AR</option>
-							</select>
-						</div>
+						
+						<div>	
+
+
+
 					</nav>
 				</div>
 			</nav>
@@ -113,18 +152,18 @@ $logo = "assets/images/logo.png";
 					<div class="w3layouts-banner-top">
 						<div class="container">
 								<div class="agileits-banner-info">
-									<h3>Make Your Dream Live </h3>
-									<h3>Adventures fill your soul</h3>
+									<h3><?php echo $banner_txt[$language][0] ?></h3>
+									<h3><?php echo $banner_txt[$language][1] ?></h3>
 								</div>	
-					</div>
+						</div>
 					</div>
 				</li>
 				<li>
 						<div class="w3layouts-banner-top w3layouts-banner-top1">
 						<div class="container">
 								<div class="agileits-banner-info">
-									<h3>Adventure awaits for you</h3>
-									<h3>Lets travel to see the world</h3>
+									<h3><?php echo $banner_txt[$language][2] ?></h3>
+									<h3><?php echo $banner_txt[$language][3] ?></h3>
 								</div>	
 							</div>
 						</div>
@@ -133,10 +172,9 @@ $logo = "assets/images/logo.png";
 						<div class="w3layouts-banner-top w3layouts-banner-top2">
 							<div class="container">
 								<div class="agileits-banner-info">
-									<h3>One Way To Get Out Of Life</h3>
-									<h3>Lets find some beautiful place</h3>
+									<h3><?php echo $banner_txt[$language][4] ?></h3>
+									<h3><?php echo $banner_txt[$language][5] ?></h3>
 								</div>	
-								
 							</div>
 						</div>
 					</li>
@@ -144,8 +182,8 @@ $logo = "assets/images/logo.png";
 						<div class="w3layouts-banner-top w3layouts-banner-top3">
 							<div class="container">
 								<div class="agileits-banner-info">
-									<h3>One Way To Get Out Of Life</h3>
-									<h3>Lets find some beautiful place</h3>
+									<h3><?php echo $banner_txt[$language][6] ?></h3>
+									<h3><?php echo $banner_txt[$language][7] ?></h3>
 								</div>	
 								
 							</div>
@@ -156,7 +194,7 @@ $logo = "assets/images/logo.png";
 						<div class="w3layouts-banner-top w3layouts-banner-top4">
 							<div class="container">
 								<div class="agileits-banner-info">
-									<h3>Embark on a journey to wellness.</h3>
+									<h3><?php echo $banner_txt[$language][8] ?></h3>
 								</div>	
 							</div>
 						</div>
@@ -171,22 +209,23 @@ $logo = "assets/images/logo.png";
 <!-- about -->
 <div class="about" id="about">
 	<div class="container">
-		<div class="abouthead">
-			<h5>About us</h5>
-			<h2 class="heading">Who we are</h2>
-			<p>We Leap Visa Travel Agency, where travel dreams become reality. With over 10 years of unparalleled expertise in the travel and visa industry, we have been the guiding compass for countless travelers seeking seamless journeys and unforgettable experiences.</p>
-		</div>
-		<div class="col-md-6 aboutleft">
-			<h4>Our Trip</h4>
-			<!-- <h3>Travel Adventure</h3> -->
-			<p>Since 2013, we have been at the forefront of the travel and visa sector, offering a comprehensive range of services tailored to meet the diverse needs of our clients. From leisure travel to business trips, our experienced team is committed to delivering seamless experiences that exceed expectations.
+
+	<div class="abouthead">
+                            <h5>About us</h5>
+                            <h2 class="heading">Who we are</h2>
+                            <p>We Leap Visa Travel Agency, where travel dreams become reality. With over 10 years of unparalleled expertise in the travel and visa industry, we have been the guiding compass for countless travelers seeking seamless journeys and unforgettable experiences.</p>
+                        </div>
+						<div class="col-md-6 aboutleft">
+                            <h4>Our Trip</h4>
+                            <!-- <h3>Travel Adventure</h3> -->
+                            <p>Since 2013, we have been at the forefront of the travel and visa sector, offering a comprehensive range of services tailored to meet the diverse needs of our clients. From leisure travel to business trips, our experienced team is committed to delivering seamless experiences that exceed expectations.
 
 As specialists in visa services, we streamline the often complex process of obtaining visas for travel to more than 13 countries worldwide. With in-depth knowledge of visa requirements and regulations, we guide our clients through every step of the application process, ensuring efficiency and peace of mind.
 
-In addition to our visa services, we also offer a wide array of travel solutions, including personalized trip planning, itinerary customization, and accommodation arrangements. Whether you're embarking on a solo adventure or planning a group excursion, our team is here to turn your travel dreams into reality.<br/>Join us on a journey of discovery and adventure. Experience the world with Leap Visa.</p>
-		</div>
+In addition to our visa services, we also offer a wide array of travel solutions, including personalized trip planning, itinerary customization, and accommodation arrangements. Whether you are embarking on a solo adventure or planning a group excursion, our team is here to turn your travel dreams into reality.<br/>Join us on a journey of discovery and adventure. Experience the world with Leap Visa.</p>
+                        </div>
 		<div class="col-md-6 aboutright">
-			<h3>Why Choose Us?</h3>
+			 <h3>Why Choose Us?</h3>
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingOne">
@@ -198,7 +237,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
 								<div class="panel-body panel_text">
-									At We Leap Visa Travel Agency, we're more than just travel facilitators - we're dream enablers. With meticulous attention to detail and a passion for crafting unforgettable experiences, we take your travel aspirations and turn them into reality. Whether it's exploring ancient ruins in Greece, savoring street food in Thailand, or studying abroad in Europe, we're here to make your dream journeys come true. Let us be your partners in adventure, guiding you every step of the way towards your next unforgettable experience.
+									At We Leap Visa Travel Agency, we are more than just travel facilitators - we arere dream enablers. With meticulous attention to detail and a passion for crafting unforgettable experiences, we take your travel aspirations and turn them into reality. Whether its exploring ancient ruins in Greece, savoring street food in Thailand, or studying abroad in Europe, we arere here to make your dream journeys come true. Let us be your partners in adventure, guiding you every step of the way towards your next unforgettable experience.
 								</div>
 							</div>
 						</div>
@@ -245,44 +284,9 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							</div>
 						</div>
 					</div>
+		
 		</div>
 		<div class="clearfix"></div>
-	<!--count-->
-<!-- <div class="count-agileits" id="stats">
-					<div class="count-grids">
-					<div class="count-bgcolor-w3ls">
-						<div class="col-md-3 count-grid">
-							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='148' data-delay='.5' data-increment="1">148</div>
-									<span></span>
-									<h5>Tours</h5>
-							</div>
-						</div>
-						<div class="col-md-3 count-grid">
-							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='372' data-delay='.5' data-increment="1">372</div>
-									<span></span>
-									<h5>Plans</h5>
-							</div>
-						</div>
-						<div class="col-md-3 count-grid">
-							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='389' data-delay='.5' data-increment="1">389</div>
-									<span></span>
-									<h5>Travel</h5>
-							</div>
-						</div>
-						<div class="col-md-3 count-grid">
-							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='109' data-delay='.5' data-increment="1">109</div>
-									<span></span>
-									<h5>Gifts</h5>
-								</div>
-						</div>
-						<div class="clearfix"></div>
-						</div>
-					</div>
-</div> -->
 <!--count-->
 	</div>
 </div>
@@ -800,6 +804,8 @@ In addition to our visa services, we also offer a wide array of travel solutions
 	</div>
 <!-- //bootstrap-pop-up -->
 
+
+
 <!-- Default-JavaScript-File -->
 	<script type="text/javascript" src="<?php echo base_url('/assets/js/jquery-2.1.4.min.js');?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('/assets/js/bootstrap.js'); ?>"></script>
@@ -954,6 +960,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 <!--EmailJS End-->
 
 
+
 <script>
         function googleTranslateElementInit() {
             new google.translate.TranslateElement(
@@ -977,7 +984,13 @@ $(function(){
   $('.selectpicker').selectpicker();
 });
 	</script>
-
+	
+	<script>
+		function set_language(){
+			var language=jQuery('#language').val();
+			window.location.href='http://localhost/leap_web/?language='+language;
+		}
+	</script>
 </body>
 <!-- //Body -->
 </html>
