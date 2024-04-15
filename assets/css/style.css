@@ -2497,6 +2497,70 @@ button.close {
 	display: block;
 }
 
+.toggle-bar {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-bar-checkbox {
+  display: none;
+}
+
+.toggle-bar-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 34px;
+}
+
+.toggle-bar-inner {
+  display: flex;
+  width: 200%;
+}
+
+.toggle-bar-on,
+.toggle-bar-off {
+  display: inline-block;
+  width: 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 30px;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.toggle-bar-switch {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.toggle-bar-checkbox:checked + .toggle-bar-label .toggle-bar-switch {
+  transform: translateX(100%);
+}
+
+.toggle-bar-checkbox:checked + .toggle-bar-label .toggle-bar-on {
+  color: #fff;
+}
+
+.toggle-bar-checkbox:checked + .toggle-bar-label .toggle-bar-off {
+  color: #666;
+}
+
+
+
+
 
 /*Whatsapp float*/
 .float{
@@ -2522,45 +2586,109 @@ button.close {
 	padding-top: 15px;
 }
 
-
-.lang_drop {
-	/* Reset Select */
-	appearance: none;
-	outline: 10px red;
-	border: 0;
-	box-shadow: none;
-	/* Personalize */
-	flex: 1;
-	padding: 0 1em;
-	color: #252525;
-	background-color: var(--darkgray);
-	background-image: none;
-	cursor: pointer;
-	font-weight: bold;
-  }
-  /* Remove IE arrow */
-  .lang_drop::-ms-expand {
-	display: none;
-  }
-
-.lang_drop{
+.switch {
 	position: relative;
-	display: flex;
-	width: 4em;
-	height: 2em;
-	border-radius: .25em;
-	overflow: hidden;
+	display: inline-block;
+	margin: 0 5px;
   }
-
-.lang_drop::after {
-	content: '\25BC';
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 1em;
-	background-color: #34495e;
-	transition: .25s all ease;
-	pointer-events: none;
-  }
-
   
+  .switch > span {
+	position: absolute;
+	top: 14px;
+	pointer-events: none;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+	width: 50%;
+	text-align: center;
+  }
+  
+  input.check-toggle-round-flat:checked ~ .off {
+	color: #F36F25;
+  }
+  
+  input.check-toggle-round-flat:checked ~ .on {
+	color: #fff;
+  }
+  
+  .switch > span.on {
+	left: 0;
+	padding-left: 2px;
+	color: #F36F25;
+  }
+  
+  .switch > span.off {
+	right: 0;
+	padding-right: 4px;
+	color: #fff;
+  }
+  
+  .check-toggle {
+	position: absolute;
+	margin-left: -9999px;
+	visibility: hidden;
+  }
+  .check-toggle + label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  input.check-toggle-round-flat + label {
+	padding: 2px;
+	width: 97px;
+	height: 35px;
+	background-color: #F36F25;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	-ms-border-radius: 60px;
+	-o-border-radius: 60px;
+	border-radius: 60px;
+  }
+  input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+	display: block;
+	position: absolute;
+	content: "";
+  }
+  
+  input.check-toggle-round-flat + label:before {
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	right: 2px;
+	background-color: #F36F25;
+	-webkit--moz-border-radius: 60px;
+	-ms-border-radius: 60px;
+	-o-border-radius: 60px;
+	border-radius: 60px;
+  }
+  input.check-toggle-round-flat + label:after {
+	top: 4px;
+	left: 4px;
+	bottom: 4px;
+	width: 48px;
+	background-color: #fff;
+	-webkit-border-radius: 52px;
+	-moz-border-radius: 52px;
+	-ms-border-radius: 52px;
+	-o-border-radius: 52px;
+	border-radius: 52px;
+	-webkit-transition: margin 0.2s;
+	-moz-transition: margin 0.2s;
+	-o-transition: margin 0.2s;
+	transition: margin 0.2s;
+  }
+  
+  input.check-toggle-round-flat:checked + label {
+  }
+  
+  input.check-toggle-round-flat:checked + label:after {
+	margin-left: 44px;
+  }
