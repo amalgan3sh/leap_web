@@ -245,7 +245,7 @@ ul.agile_forms {
 /*-- //banner --*/
 /*-- banner-top --*/
 .w3layouts-banner-top{
-    background: url(../images/banner1.jpg) no-repeat 0px 0px;
+    background: url(../images/banner1.webp) no-repeat 0px 0px;
     background-size: cover;
 	object-fit: contain;	
 	-webkit-background-size: cover;	
@@ -255,7 +255,7 @@ ul.agile_forms {
     min-height: 780px;
 }
 .w3layouts-banner-top1{
-	background: url(../images/banner2.jpg) no-repeat 0px 0px;
+	background: url(../images/banner2.webp) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -264,7 +264,7 @@ ul.agile_forms {
     min-height: 780px;
 }
 .w3layouts-banner-top2{
-	background: url(../images/banner3.jpg) no-repeat 0px 0px;
+	background: url(../images/banner3.webp) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -273,7 +273,7 @@ ul.agile_forms {
     min-height: 780px;
 }
 .w3layouts-banner-top3{
-	background: url(../images/banner4.jpg) no-repeat 0px 0px;
+	background: url(../images/banner4.webp) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -283,7 +283,7 @@ ul.agile_forms {
 }
 
 .w3layouts-banner-top4{
-	background: url(../images/banner5.jpg) no-repeat 0px 0px;
+	background: url(../images/banner5.webp) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -2692,3 +2692,18 @@ button.close {
   input.check-toggle-round-flat:checked + label:after {
 	margin-left: 44px;
   }
+
+
+
+.lang_drop{
+	border: none;
+	height: 3rem;
+	width: 4rem;
+	color: white;
+	background-color: #084A94;
+	border-radius: 1rem;
+}
+
+
+
+  

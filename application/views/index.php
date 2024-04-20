@@ -36,7 +36,7 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <!-- Head -->
 <head>
 <title>Leap Visa</title>
@@ -126,10 +126,10 @@ $logo = "assets/images/logo.png";
 								<a href="https://www.facebook.com/profile.php?id=61555287373980" target="_blank" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
 								<a href="https://www.snapchat.com/add/leapvisa?share_id=rpCUc_9SXX8&locale=en-IN" target="_blank" class="social-button snapchat"><i class="fa fa-snapchat"></i></a> 
 								<a href="https://twitter.com/LP_Visa_Riyadh" target="_blank" class="social-button twitter"><i class="fa fa-twitter"></i></a> 
-								 <select onchange="set_language()" name="language" id="language" class="lang_drop">
-									<option value="en" <?php echo $en_select ?>><i class="fa fa-glob"></i> EN</option>
+								<select onchange="set_language()" name="language" id="language" class="lang_drop">
+									<option value="en" <?php echo $en_select ?>><i class="fa fa-twitter"></i>EN</option>
 									<option value="ar" <?php echo $ar_select ?>><i class="fa fa-glob"></i> AR</option>
-								</select>
+								</select> 
 								
 							</div>
 						</div>
@@ -211,33 +211,28 @@ $logo = "assets/images/logo.png";
 	<div class="container">
 
 	<div class="abouthead">
-                            <h5>About us</h5>
-                            <h2 class="heading">Who we are</h2>
-                            <p>We Leap Visa Travel Agency, where travel dreams become reality. With over 10 years of unparalleled expertise in the travel and visa industry, we have been the guiding compass for countless travelers seeking seamless journeys and unforgettable experiences.</p>
+                            <h5><?php echo $about_us[$language][0]?></h5>
+                            <h2 class="heading"><?php echo $about_us[$language][1]?></h2>
+                            <p><?php echo $about_us[$language][2]?></p>
                         </div>
 						<div class="col-md-6 aboutleft">
-                            <h4>Our Trip</h4>
-                            <!-- <h3>Travel Adventure</h3> -->
-                            <p>Since 2013, we have been at the forefront of the travel and visa sector, offering a comprehensive range of services tailored to meet the diverse needs of our clients. From leisure travel to business trips, our experienced team is committed to delivering seamless experiences that exceed expectations.
-
-As specialists in visa services, we streamline the often complex process of obtaining visas for travel to more than 13 countries worldwide. With in-depth knowledge of visa requirements and regulations, we guide our clients through every step of the application process, ensuring efficiency and peace of mind.
-
-In addition to our visa services, we also offer a wide array of travel solutions, including personalized trip planning, itinerary customization, and accommodation arrangements. Whether you are embarking on a solo adventure or planning a group excursion, our team is here to turn your travel dreams into reality.<br/>Join us on a journey of discovery and adventure. Experience the world with Leap Visa.</p>
+                            <h4><?php echo $our_trip[$language][0]?></h4>
+                            <p><?php echo $our_trip[$language][1]?></p>
                         </div>
 		<div class="col-md-6 aboutright">
-			 <h3>Why Choose Us?</h3>
+			 <h3><?php echo $why_choose_us[$language][0]?></h3>
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingOne">
 								<h4 class="panel-title asd">
 									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-										We Make your Dream come true
+									<?php echo $why_choose_us[$language][1]?>
 									</a>
 								</h4>
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
 								<div class="panel-body panel_text">
-									At We Leap Visa Travel Agency, we are more than just travel facilitators - we arere dream enablers. With meticulous attention to detail and a passion for crafting unforgettable experiences, we take your travel aspirations and turn them into reality. Whether its exploring ancient ruins in Greece, savoring street food in Thailand, or studying abroad in Europe, we arere here to make your dream journeys come true. Let us be your partners in adventure, guiding you every step of the way towards your next unforgettable experience.
+									<?php echo $why_choose_us[$language][2]?>
 								</div>
 							</div>
 						</div>
@@ -245,13 +240,13 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							<div class="panel-heading" role="tab" id="headingTwo">
 								<h4 class="panel-title asd">
 									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										 Lets travel and call it a plan
+									<?php echo $why_choose_us[$language][3]?>
 									</a>
 								</h4>
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
 								<div class="panel-body panel_text">
-									At We Leap Visa Travel Agency, we believe that every journey begins with a single step and every adventure starts with a dream. Let's turn your wanderlust into a well-crafted plan. Whether you're envisioning a relaxing beach getaway, an exhilarating safari, or a cultural immersion in a bustling metropolis, we're here to transform your travel aspirations into a meticulously planned itinerary. Together, let's embark on a journey where every moment is an opportunity for discovery and every destination becomes a cherished memory. Let's travel and call it a plan.
+								<?php echo $why_choose_us[$language][4]?>
 								</div>
 							</div>
 						</div>
@@ -259,13 +254,13 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							<div class="panel-heading" role="tab" id="headingThree">
 							  <h4 class="panel-title asd">
 								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									 Where you go there you are
+								<?php echo $why_choose_us[$language][5]?>
 								</a>
 							  </h4>
 							</div>
 							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
 								<div class="panel-body panel_text">
-									At We Leap Visa Travel Agency, we understand that the true essence of travel lies not only in the destinations you visit but also in the experiences you accumulate along the way. Whether you're wandering through cobblestone streets in Europe, marveling at natural wonders in South America, or immersing yourself in the vibrant cultures of Asia, each journey is a reflection of your unique spirit and curiosity. Wherever your wanderlust takes you, we're here to ensure that every moment is filled with wonder, discovery, and unforgettable memories. Because in the end, it's not just about where you go, but the person you become along the way.
+								<?php echo $why_choose_us[$language][6]?>
 								</div>
 							</div>
 						</div>
@@ -273,13 +268,13 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							<div class="panel-heading" role="tab" id="headingFour">
 							  <h4 class="panel-title asd">
 								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-									   Adventures are the best way to learn 
+									<?php echo $why_choose_us[$language][7]?>
 								</a>
 							  </h4>
 							</div>
 							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
 								<div class="panel-body panel_text">
-									At We Leap Visa Travel Agency, we believe that adventures are not just about exploring new places but also about discovering oneself. Whether you're trekking through rugged mountains, diving into crystal-clear waters, or immersing yourself in local cultures, every adventure is an opportunity for growth and learning. From the challenges you overcome to the connections you make with people from around the world, each experience adds depth to your understanding of the world and yourself. Let us be your guides on this journey of discovery, where every adventure is a lesson waiting to be learned.
+								<?php echo $why_choose_us[$language][8]?>
 								</div>
 							</div>
 						</div>
@@ -297,7 +292,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 	<div class="center-container">
 		<div class="video-info">
 		<div class="container">	
-			<h3 class="heading1">Your Gateway to Seamless Adventures Worldwide! Unlocking Borders, Embracing Cultures, and Making Every Destination Yours.</h3>
+			<h3 class="heading1"><?php echo $video_txt[$language][0]?></h3>
 			
 		</div>					
 		</div>
@@ -308,26 +303,15 @@ In addition to our visa services, we also offer a wide array of travel solutions
 <!-- team -->
 	<div id="team" class="team">
 		<div class="container">
-			<h3 class="w3ls-title">Our Services</h3>  
+			<h3 class="w3ls-title"><?php echo $our_services[$language][0]?></h3>  
 			<div class="team-agile-row">
 				<div class="col-md-6 team-grid">
 					<div class="col-md-6 team-grid-right">
 						<img src="<?php echo base_url('/assets/images/visa.jpg'); ?>" alt=" " class="img-responsive" />
 					</div>
 					<div class=" col-md-6 team-grid-left">
-						<h4>Visa Processing</h4>
-						<p>We specialize in simplifying visa processing for travelers to over 15 countries worldwide. 
-							With our expertise and streamlined processes, we ensure a hassle-free journey. 
-							Whether it's for business, vacation, or study, our dedicated team provides efficient and reliable 
-							visa services tailored to your needs.</p>
-						<!-- <div class="social-wthree-icons bnragile-icons">
-							<ul>
-								<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
-								<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li> 
-							</ul>
-							<div class="clearfix"> </div>
-						</div>    -->
+						<h4><?php echo $our_services[$language][1]?></h4>
+						<p><?php echo $our_services[$language][2]?></p>
 					</div> 
 					<div class="clearfix"> </div>
 				</div>
@@ -336,9 +320,8 @@ In addition to our visa services, we also offer a wide array of travel solutions
 						<img src="<?php echo base_url('/assets/images/embassy.png'); ?>" alt=" " class="img-responsive" />
 					</div>
 					<div class="col-md-6 team-grid-left agileinfo-welcm-grid2">
-						<h4>Embassy Services</h4>
-						<p>Discover seamless embassy services tailored to your needs with our dedicated assistance. 
-							From visa applications to consular affairs, we streamline the process, ensuring efficiency and accuracy every step of the way.</p>
+						<h4><?php echo $our_services[$language][3]?></h4>
+						<p><?php echo $our_services[$language][4]?></p>
 					</div> 
 					<div class="clearfix"> </div>
 				</div>
@@ -350,9 +333,8 @@ In addition to our visa services, we also offer a wide array of travel solutions
 						<img src="<?php echo base_url('/assets/images/licence.jpg'); ?>" alt=" " class="img-responsive" />
 					</div>
 					<div class="col-md-6 team-grid-left">
-						<h4>International Driving License</h4>
-						<p>Embark on your global adventures with ease by obtaining your international driving license with our comprehensive support services. 
-							We guide you through the process, ensuring all necessary paperwork is completed accurately and efficiently.</p>
+						<h4><?php echo $our_services[$language][5]?></h4>
+						<p><?php echo $our_services[$language][6]?></p>
 						
 					</div> 
 					<div class="clearfix"> </div>
@@ -362,9 +344,8 @@ In addition to our visa services, we also offer a wide array of travel solutions
 						<img src="<?php echo base_url('/assets/images/health.jpg'); ?>" alt=" " class="img-responsive" />
 					</div>
 					<div class="col-md-6 team-grid-left agileinfo-welcm-grid2">
-						<h4>Medical Tourism</h4>
-						<p>Experience seamless medical tourism with our comprehensive support services, powered by our collaboration with Bluedot Medical Assistance 
-							</p>
+						<h4><?php echo $our_services[$language][7]?></h4>
+						<p><?php echo $our_services[$language][8]?></p>
 					</div> 
 					<div class="clearfix"> </div>
 				</div>
@@ -377,14 +358,14 @@ In addition to our visa services, we also offer a wide array of travel solutions
 <!-- gallery -->
 <div class="gallery" id="gallery">  
     <div class="container"> 
-        <h3 class="w3ls-title">Explore</h3>
+        <h3 class="w3ls-title"><?php echo $countries[$language][0]?></h3>
         <div class="gallery-agileinfo">
         	<!-- UK -->
                 <div class="col-sm-4 col-xs-6 w3gallery-grids">
                     <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
                         <img class="flag" src="<?php echo base_url('/assets/images/flags/UK_flag.jpg');?>" alt="" title="Documents required"/> 
                         <div class="overlay">
-                            <span class="text">UK</span>
+                            <span class="text"><?php echo $countries[$language][1]?></span>
                         </div>
                     </a> 
                 </div> 
@@ -393,7 +374,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                     <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
                         <img class="flag" src="<?php echo base_url('/assets/images/flags/usa_flag.jpg');?>" alt="" title="Documents required"/> 
                         <div class="overlay">
-                            <span class="text">USA</span>
+                            <span class="text"><?php echo $countries[$language][2]?></span>
                         </div>
                     </a> 
                 </div> 
@@ -402,7 +383,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                     <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
                         <img class="flag" src="<?php echo base_url('/assets/images/flags/canada_flag.jpg');?>" alt="" title="Documents required"/> 
                         <div class="overlay">
-                            <span class="text">Canada</span>
+                            <span class="text"><?php echo $countries[$language][3]?></span>
                         </div>
                     </a> 
                 </div>
@@ -410,7 +391,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
                     <img class="flag" src="<?php echo base_url('/assets/images/flags/brazilian-flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
-                        <span class="text">Brazil</span>
+                        <span class="text"><?php echo $countries[$language][4]?></span>
                     </div>
                 </a> 
             </div>
@@ -418,7 +399,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                     <a href="<?php echo base_url('/assets/images/visa_processing_soudi_nationals.png');?>" class="figure">
                         <img class="flag" src="<?php echo base_url('/assets/images/flags/mexico_flag.jpg');?>" alt="" title="Documents required"/> 
                         <div class="overlay">
-                            <span class="text">Mexico</span>
+                            <span class="text"><?php echo $countries[$language][5]?></span>
                         </div>
                     </a> 
                 </div>
@@ -426,7 +407,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
                     <img class="flag" src="<?php echo base_url('/assets/images/flags/australia_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
-                        <span class="text">Australia</span>
+                        <span class="text"><?php echo $countries[$language][6]?></span>
                     </div>
                 </a> 
             </div>
@@ -435,7 +416,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
                     <img class="flag" src="<?php echo base_url('/assets/images/flags/china_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
-                        <span class="text">China</span>
+                        <span class="text"><?php echo $countries[$language][7]?></span>
                     </div>
                 </a> 
             </div> 
@@ -445,7 +426,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                         <img class="flag" src="<?php echo base_url('/assets/images/flags/indian_flag.jpg');?>" alt="" title="Documents required"/> 
                     </a>
                     <div class="overlay">
-                        <span class="text">India</span>
+                        <span class="text"><?php echo $countries[$language][8]?></span>
                     </div>
                 </div> 
             </div> 
@@ -453,7 +434,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
                     <img class="flag" src="<?php echo base_url('/assets/images/flags/european_union_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
-                        <span class="text">EU</span>
+                        <span class="text"><?php echo $countries[$language][9]?></span>
                     </div>
                 </a> 
             </div>
@@ -470,7 +451,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
                     <img class="flag" src="<?php echo base_url('/assets/images/flags/Russia_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
-                        <span class="text">Russia (Online)</span>
+                        <span class="text"><?php echo $countries[$language][10]?></span>
                     </div>
                 </a> 
             </div>
@@ -478,7 +459,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
                     <img class="flag" src="<?php echo base_url('/assets/images/flags/japan_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
-                        <span class="text">Japan (Online)</span>
+                        <span class="text"><?php echo $countries[$language][11]?></span>
                     </div>
                 </a> 
             </div>   
@@ -486,7 +467,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
                     <img class="flag" src="<?php echo base_url('/assets/images/flags/gueina_flag.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
-                        <span class="text">Guinea (Online)</span>
+                        <span class="text"><?php echo $countries[$language][12]?></span>
                     </div>
                 </a> 
             </div> 
@@ -497,7 +478,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
                 <a href="<?php echo base_url('/assets/images/visa_processing_non_soudi_nationals.png');?>" class="figure">
                     <img class="flag" src="<?php echo base_url('/assets/images/flags/flag-thailand.jpg');?>" alt="" title="Documents required"/> 
 					<div class="overlay">
-                        <span class="text">Thailand</span>
+                        <span class="text"><?php echo $countries[$language][13]?></span>
                     </div>
                 </a> 
             </div> 
@@ -512,7 +493,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
             <div class="clearfix"> </div>
 			<div class="col-sm-12 text-center">
     <button id="view-more-btn" class="view-more-btn" onclick="toggleAdditionalCountries()">
-        <span id="view-more-icon" class="fa fa-chevron-down"></span> View More
+        <span id="view-more-icon" class="fa fa-chevron-down"></span> <?php echo $countries[$language][14]?>
     </button>
 </div>
         </div> 
@@ -542,13 +523,8 @@ In addition to our visa services, we also offer a wide array of travel solutions
 <!-- testimonials -->
 <div class="testimonials" id="testimonials">
 	<div class="container">
-			<h3 class="w3ls-title">Medical Services</h3>  
-			<p class="medical-para">Welcome to Leap Visa Travel Agency Medical Assistance, your premier destination for a seamless fusion of healthcare and travel services. 
-				We pride ourselves on offering a comprehensive range of offerings designed to cater to your every need, including 
-				bespoke medical tourism packages, expert medical assistance, reliable air ambulance services, and more. 
-				Whether you're seeking top-notch medical treatments abroad, require assistance navigating healthcare systems, or 
-				need swift and efficient medical transportation, we've got you covered. Explore our array of services below and let 
-				us be your trusted partner in health and travel. Click the button below to discover the possibilities.</p>
+			<h3 class="w3ls-title"><?php echo $medical_service[$language][0]?></h3>  
+			<p class="medical-para"><?php echo $medical_service[$language][1]?></p>
 				<!-- <input class="medical_btn" id="medical_btn" type="button" value="Click Here"/> -->
 	</div>
 	<script>
@@ -566,13 +542,11 @@ In addition to our visa services, we also offer a wide array of travel solutions
 			</a>
 		</div>
 		<div class="w3-agile-post-info">
-			<h4><a href="#" data-toggle="modal" data-target="#myModal">Medical Tourism</a></h4>
-			<p>Medical tourism serves as a pivotal pathway in healthcare, facilitating access to specialized treatments and procedures 
-				across international borders. This industry enables individuals to seek medical care abroad, often for reasons such as 
-				cost savings, shorter wait times, or access to cutting-edge treatments not available in their home countries.
+			<h4><a href="#" data-toggle="modal" data-target="#myModal"><?php echo $medical_service[$language][2]?></a></h4>
+			<p><?php echo $medical_service[$language][3]?>
 			</p>
 			<ul>
-				<li>Learn More</li>
+				<li><?php echo $learn_more[$language][0]?></li>
 			</ul>
 		</div>
 	</div>
@@ -582,64 +556,26 @@ In addition to our visa services, we also offer a wide array of travel solutions
 			</a>
 		</div>
 		<div class="w3-agile-post-info">
-			<h4><a href="#" data-toggle="modal" data-target="#myModal1">Air Ambulance</a></h4>
-			<p>Air ambulances play a vital role as lifelines in medical transport, delivering swift and 
-				specialized care to patients in critical need. These airborne intensive care units are outfitted with 
-				an array of advanced medical equipment and medications to administer life-saving interventions during transit.</p>
+			<h4><a href="#" data-toggle="modal" data-target="#myModal1"><?php echo $medical_service[$language][4]?></a></h4>
+			<p><?php echo $medical_service[$language][5]?></p>
 			<ul>
-				<li>Learn More</li>
+				<li><?php echo $learn_more[$language][0]?></li>
 			</ul>
 		</div>
 	</div>
 	<div class="clearfix"> </div>
 
-
-<!-- <div class="agile_inner_w3ls-grids">
-	
-				<div class="col-sm-6 w3-agile-post-grids">
-					<div class="w3-agile-post-img w3-agile-post-img1">
-						<a href="#" data-toggle="modal" data-target="#myModal"> 
-						</a>
-					</div>
-					<div class="w3-agile-post-info">
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">Quisque a rhoncus</a></h4>
-						<p>Suspendisse in nisl at ipsum molestie dignissim. Pellentesque est nisi, blandit eget aliquam sed, 
-						Quisque ut risus eget libero finibus facilisis. Phasellus tempus hendrerit sem ut iaculis. consequat nec risus.</p>
-						<ul>
-							<li>By <a href="#">Admin -- </a></li>
-							<li>May 8th,2017</li>
-						</ul>
-					</div>
-					<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
-				</div>
-				<div class="col-sm-6 w3-agile-post-grids">
-					<div class="w3-agile-post-img w3-agile-post-img2">
-						<a href="#" data-toggle="modal" data-target="#myModal"> 
-						</a>
-					</div>
-					<div class="w3-agile-post-info">
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">Quisque a rhoncus</a></h4>
-						<p>Suspendisse in nisl at ipsum molestie dignissim. Pellentesque est nisi, blandit eget aliquam sed,
-						Quisque ut risus eget libero finibus facilisis. Phasellus tempus hendrerit sem ut iaculis. consequat nec risus.</p>
-						<ul>
-							<li>By <a href="#">Admin -- </a></li>
-							<li>May 24th,2017</li>
-						</ul>
-					</div>
-					<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
-				</div>
-				<div class="clearfix"> </div> -->
 			</div>
 
 <!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
-			<h3 class="w3ls-title">Join Our Adventure</h3>
+			<h3 class="w3ls-title"><?php echo $join_adventure[$language][0]?></h3>
 		</div>
 		<div class="w3-agileits-newsletter">
 			<div class="subscribe-grid">
 				<form action="#" method="post">
-					<input type="text" placeholder="Subscribe" name="Subscribe" required="">
+					<input type="text" placeholder="<?php echo $join_adventure[$language][1]?>" name="Subscribe" required="">
 					<button class="btn1"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
 				</form>
 			</div>
@@ -650,17 +586,17 @@ In addition to our visa services, we also offer a wide array of travel solutions
 <!-- contact -->
 <div class="contact" id="contact">
 		<div class="container">
-			<h3 class="w3ls-title">Get in touch</h3>
+			<h3 class="w3ls-title"><?php echo $get_in_touch[$language][0]?></h3>
 			<div class="agile-contact-form">
 				<div class="col-md-6 contact-form-left">
 					<div class="w3layouts-contact-form-top">
-						<h3>Leap Visa Travels</h3>
-						<p>Located in: Opposite to Dove Plaza<br>4486 Umm Al Hamam St, Umm Al Hamam Al Sharqi, <br>حي, 6803, Riyadh 12321, Saudi Arabia</p>
+						<h3><?php echo $get_in_touch[$language][1]?></h3>
+						<p><?php echo $get_in_touch[$language][2]?><br><?php echo $get_in_touch[$language][3]?><br><?php echo $get_in_touch[$language][4]?></p>
 						<p><b>Email: </b>info@leaptravelagency.com</p>
 						<p><b>Phone: </b>+966 0550588558</p>
 					</div>
 					<div class="agileits-contact-address">
-						<h3>Follow us on</h3>
+						<h3><?php echo $get_in_touch[$language][5]?></h3>
 						<div class="social">
 							<ul>
 								<li><a href="https://www.facebook.com/profile.php?id=61555287373980" target="_blank" class="fa fa-facebook"> </a></li>
@@ -673,7 +609,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 				</div>
 				<div class="col-md-6 contact-form-right">
 					<div class="contact-form-top">
-						<h3>Send us a message</h3>
+						<h3><?php echo $get_in_touch[$language][6]?></h3>
 					</div>
 					<div class="agileinfo-contact-form-grid">
 						<!-- <form> -->
@@ -681,7 +617,7 @@ In addition to our visa services, we also offer a wide array of travel solutions
 							<input type="text" name="Subject" id="subject" placeholder="Subject" required="">
 							<input type="email" name="Email" id="email" placeholder="Email" required="">
 							<textarea name="Message" placeholder="Message" id="message" required=""></textarea>
-							<input type="button" id="send_mail" onclick="sendEmail()" class="btn1" value="Submit">
+							<input type="button" id="send_mail" onclick="sendEmail()" class="btn1" value='<?php echo $get_in_touch[$language][7]?>'>
 							<span id="mail_msg"></span>
 							<!-- <button class="btn1" >Submit</button> -->
 						<!-- </form> -->
@@ -706,16 +642,16 @@ In addition to our visa services, we also offer a wide array of travel solutions
 <div class="footer-w3layouts">
 	<div class="container">
 		<div class="agile-copy">
-			<p>© 2024 Leap Visa Travel Agency</p>
+			<p>© <?php echo $footer[$language][0]?></p>
 		</div>
 		<div class="agileits-social">
 			<ul>
-				<li><a href="#home" class="scroll">Home</a></li>
-				<li><a href="#about" class="scroll">About</a></li>
-				<li><a href="#team" class="scroll">Our Services</a></li>
-				<li><a href="#gallery" class="scroll">Explore</a></li>
-				<li><a href="#testimonials" class="scroll">Medical</a></li>
-				<li><a href="#contact" class="scroll">Contact</a></li>
+				<li><a href="#home" class="scroll"><?php echo $footer[$language][1]?></a></li>
+				<li><a href="#about" class="scroll"><?php echo $footer[$language][2]?></a></li>
+				<li><a href="#team" class="scroll"><?php echo $footer[$language][3]?></a></li>
+				<li><a href="#gallery" class="scroll"><?php echo $footer[$language][4]?></a></li>
+				<li><a href="#testimonials" class="scroll"><?php echo $footer[$language][5]?></a></li>
+				<li><a href="#contact" class="scroll"><?php echo $footer[$language][6]?></a></li>
 			</ul>
 		</div>
 		<div class="clearfix"></div>
@@ -733,30 +669,30 @@ In addition to our visa services, we also offer a wide array of travel solutions
 				</div>
 				<section>
 					<div class="modal-body">
-						<h5>Medical Tourism</h5>
+						<h5><?php echo $medical_popup[$language][0]?></h5>
 						<!-- <img src="<?php echo base_url('assets/images/medical.png');?>" alt=" " class="img-responsive" /> -->
 						<ul>
-							<li>We support patients to get affordable treatments in Countries like India, Pakistan, Bangladesh etc.</li>
-							<li>We provide treatment options in European and western countries as well, like Germany, Italy, USA, czech republic, UK etc.</li>
-							<li>Support to get invitation letter for the visa processing.</li>
-							<li>We support patient throughout the entire patient journey with 24/7 control center and providing individual attention through case manager support.</li>
-							<li>Our vast hospital network helps the patients to have different cost effective and quality options.</li>
-							<li>The treatment plan and estimates are provided before travel and help the patient with comprehensive package which include all the services including travel and accommodation as per the customer needs.</li>
+							<li><?php echo $medical_popup[$language][1]?></li>
+							<li><?php echo $medical_popup[$language][2]?></li>
+							<li><?php echo $medical_popup[$language][3]?></li>
+							<li><?php echo $medical_popup[$language][4]?></li>
+							<li><?php echo $medical_popup[$language][5]?></li>
+							<li><?php echo $medical_popup[$language][6]?></li>
 						</ul>
-						<h3>Process</h3>
+						<h3><?php echo $medical_popup[$language][7]?></h3>
 						<br/>
 						<ol>
-							<li><i>Collection all the latest medical report from the patient.</i></li>
-							<li><i>Understand and identify client requirements such as his treatment destination preferences, package inclusions and any other special requests if any.</i></li>
-							<li><i>Share the reports and all valid information with Bluedot Team.</i></li>
-							<li><i>Bluedot team will share the treatment plan and estimates from the hospital’s asper the client requirements.</i></li>
-							<li><i>Share the plan with client and confirm his choice.</i></li>
-							<li><i>Visa invitation letter from hospital through Bluedot team.</i></li>
-							<li><i>Visa Processing by Leap Team.</i></li>
-							<li><i>Virtual consultation, if required.</i></li>
-							<li><i>Case manager allocation by Bluedot Team.</i></li>
-							<li><i>Timely updation on the treatment progress to Leap by Bluedot team.</i></li>
-							<li><i>Patient feedback.</i></li>
+							<li><i><?php echo $medical_popup[$language][8]?></i></li>
+							<li><i><?php echo $medical_popup[$language][9]?></i></li>
+							<li><i><?php echo $medical_popup[$language][10]?></i></li>
+							<li><i><?php echo $medical_popup[$language][11]?></i></li>
+							<li><i><?php echo $medical_popup[$language][12]?></i></li>
+							<li><i><?php echo $medical_popup[$language][13]?></i></li>
+							<li><i><?php echo $medical_popup[$language][14]?></i></li>
+							<li><i><?php echo $medical_popup[$language][15]?></i></li>
+							<li><i><?php echo $medical_popup[$language][16]?></i></li>
+							<li><i><?php echo $medical_popup[$language][17]?></i></li>
+							<li><i><?php echo $medical_popup[$language][18]?></i></li>
 						</ol>
 					</div>
 				</section>
@@ -772,30 +708,30 @@ In addition to our visa services, we also offer a wide array of travel solutions
 				</div>
 				<section>
 					<div class="modal-body">
-						<h5>Air Ambulance</h5>
+						<h5><?php echo $air_ambulance[$language][0]?></h5>
 						<!-- <img src="<?php echo base_url('assets/images/medical.png');?>" alt=" " class="img-responsive" /> -->
 						<ul>
-							<li>We support patients to get affordable treatments in Countries like India, Pakistan, Bangladesh etc.</li>
-							<li>We provide treatment options in European and western countries as well, like Germany, Italy, USA, czech republic, UK etc.</li>
-							<li>Support to get invitation letter for the visa processing.</li>
-							<li>We support patient throughout the entire patient journey with 24/7 control center and providing individual attention through case manager support.</li>
-							<li>Our vast hospital network helps the patients to have different cost effective and quality options.</li>
-							<li>The treatment plan and estimates are provided before travel and help the patient with comprehensive package which include all the services including travel and accommodation as per the customer needs.</li>
+							<li><?php echo $air_ambulance[$language][1]?></li>
+							<li><?php echo $air_ambulance[$language][2]?></li>
+							<li><?php echo $air_ambulance[$language][3]?></li>
+							<li><?php echo $air_ambulance[$language][4]?></li>
+							<li><?php echo $air_ambulance[$language][5]?></li>
+							<li><?php echo $air_ambulance[$language][6]?></li>
 						</ul>
-						<h3>Process</h3>
+						<h3><?php echo $air_ambulance[$language][7]?></h3>
 						<br/>
 						<ol>
-							<li><i>Collection all the latest medical report from the patient.</i></li>
-							<li><i>Understand and identify client requirements such as his treatment destination preferences, package inclusions and any other special requests if any.</i></li>
-							<li><i>Share the reports and all valid information with Bluedot Team.</i></li>
-							<li><i>Bluedot team will share the treatment plan and estimates from the hospital’s asper the client requirements.</i></li>
-							<li><i>Share the plan with client and confirm his choice.</i></li>
-							<li><i>Visa invitation letter from hospital through Bluedot team.</i></li>
-							<li><i>Visa Processing by Leap Team.</i></li>
-							<li><i>Virtual consultation, if required.</i></li>
-							<li><i>Case manager allocation by Bluedot Team.</i></li>
-							<li><i>Timely updation on the treatment progress to Leap by Bluedot team.</i></li>
-							<li><i>Patient feedback.</i></li>
+							<li><i><?php echo $air_ambulance[$language][8]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][9]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][10]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][11]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][12]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][13]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][14]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][15]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][16]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][17]?></i></li>
+							<li><i><?php echo $air_ambulance[$language][18]?></i></li>
 						</ol>
 					</div>
 				</section>
